@@ -3,6 +3,10 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
+import MainNavigation from '../components/MainNavigation'
+
+import '../styles/screen.scss'
+
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -17,8 +21,15 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <Helmet title={data.site.siteMetadata.title}>
-          <html lang="en" />
+          <html lang="en" className="has-navbar-fixed-top" />
+          <link
+            rel="stylesheet"
+            href="https://pro.fontawesome.com/releases/v5.5.0/css/all.css"
+            integrity="sha384-j8y0ITrvFafF4EkV1mPW0BKm6dp3c+J9Fky22Man50Ofxo2wNe5pT1oZejDH9/Dt"
+            crossorigin="anonymous"
+          />
         </Helmet>
+        <MainNavigation />
         {children}
       </>
     )}
