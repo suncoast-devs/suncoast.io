@@ -34,7 +34,7 @@ html.landing {
   }
 }
 
-.duo {
+.academy-community-duo {
   @include from($tablet) {
     background-color: $white;
     background-image: linear-gradient(
@@ -50,5 +50,13 @@ html.landing {
     @include until($tablet) {
       background-color: $white-ter;
     }
+  }
+}
+
+.mission-statement {
+  .column.mission {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
