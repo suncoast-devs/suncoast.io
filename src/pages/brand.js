@@ -1,10 +1,10 @@
 import React from 'react'
-import Layout from '../components/Layout'
+// import Layout from '../components/Layout'
 
 import { withPrefix } from 'gatsby'
 
 const BrandPage = () => (
-  <Layout>
+  <>
     <section class="hero">
       <div class="hero-body">
         <div class="container">
@@ -400,7 +400,7 @@ const BrandPage = () => (
         </section>
       </div>
     </section>
-  </Layout>
+  </>
 )
 
 export default BrandPage
