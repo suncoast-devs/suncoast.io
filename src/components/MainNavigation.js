@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { globalHistory as history } from '@reach/router/lib/history'
 import Link from 'gatsby-link'
 import cx from 'classnames'
-import icon from '../images/icon.svg'
+import button from '../images/button.svg'
 
 class MainNavigation extends Component {
   state = { active: false }
@@ -48,9 +48,12 @@ class MainNavigation extends Component {
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item">
-              <img src={icon} alt="SDG Icon" height="28" width="28" />
+              <img src={button} alt="SDG Button Icon" height="28" width="28" />
             </Link>
-            <Link className="navbar-item has-text-weight-bold is-uppercase">
+            <Link
+              to="/"
+              className="navbar-item has-text-weight-bold is-uppercase"
+            >
               Suncoast Developers Guild
             </Link>
             <span

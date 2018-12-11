@@ -2,8 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
+import Footer from './Footer'
 
-import MainNavigation from '../components/MainNavigation'
+import MainNavigation from './MainNavigation'
 
 import '../styles/screen.scss'
 
@@ -31,6 +32,7 @@ const Layout = ({ children }) => (
         </Helmet>
         <MainNavigation />
         {children}
+        <Footer />
       </>
     )}
   />
