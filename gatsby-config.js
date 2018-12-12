@@ -3,17 +3,13 @@ module.exports = {
     title: 'Suncoast Developers Guild',
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: 'gatsby-plugin-google-analytics',
       options: {
-        name: 'images',
-        path: `${__dirname}/src/images`,
+        trackingId: 'UA-120953554-1',
       },
     },
-    'gatsby-plugin-sass',
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
+    'gatsby-plugin-netlify-cms',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
@@ -26,11 +22,23 @@ module.exports = {
         icon: 'src/images/icon.png',
       },
     },
+    'gatsby-plugin-react-helmet',
     {
-      resolve: 'gatsby-plugin-google-analytics',
+      resolve: 'gatsby-source-filesystem',
       options: {
-        trackingId: 'UA-120953554-1',
+        name: 'images',
+        path: `${__dirname}/src/images`,
       },
     },
+    'gatsby-plugin-sass',
+    'gatsby-plugin-sharp',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'data',
+        path: `${__dirname}/data/`,
+      },
+    },
+    'gatsby-transformer-sharp',
   ],
 }
