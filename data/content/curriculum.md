@@ -3,8 +3,11 @@ templateKey: 'content'
 title: curriculum
 ---
 
+import Icon from 'components/Icon'
+
 # Our Curriculum
 
 Our three-month program runs four cohorts per year, starting roughly every quarter. We prepare individuals for entry-level jobs as junior front-end or back-end web developers. Graduates will be able find employment with companies who build and maintain their own websites and web applications (i.e. product work), or with agencies that produce websites and web applications for other companies (i.e. client work).
-
 Students will learn client-side (front-end) technology: HTML, CSS, and JavaScript as well as server-side (back-end) technology such as .NET or Ruby on Rails. At the end of the course, students will be able to create beautiful, fully functional websites backed by databases and server-side applications.
+
+<Icon i="fas fa-narwhal" />
