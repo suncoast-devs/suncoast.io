@@ -17,8 +17,8 @@ const IndexPage = () => (
     <SplashHero />
     <AcademyCommunityDuo />
     <MissionStatement />
-    <UpcomingEvents />
-    <SocialHighlights />
+    {/* <UpcomingEvents /> */}
+    {/* <SocialHighlights /> */}
     <MailingListForm />
   </Layout>
 )

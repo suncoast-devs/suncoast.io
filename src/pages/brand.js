@@ -261,7 +261,7 @@ const BrandPage = () => (
               <p>
                 The <strong>Banner</strong> logo is our brand's primary symbol.
                 It is the default option in almost every use-case. The
-                monochromatic variant of this logo can also be used.
+                monochromatic variant of this logo can also be used in print.
               </p>
             </div>
           </div>
@@ -296,8 +296,9 @@ const BrandPage = () => (
               <p>
                 The <strong>Bouy</strong> logo is an embellishment of our
                 primary Banner logo and is used only in situations where it will
-                render clearly and in <em>full color</em>, usually in addition
-                to the Banner (e.g., in a footer, or on back of a card).
+                render clearly (i.e., legibly sized text in the banner) and in{' '}
+                <em>full color</em>, usually in addition to the Banner (e.g., in
+                a footer, or on back of a card).
               </p>
             </div>
           </div>
