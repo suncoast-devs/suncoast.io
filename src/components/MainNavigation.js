@@ -83,8 +83,11 @@ class MainNavigation extends Component {
                   <Link to="/academy/tuition" className="navbar-item">
                     Tuition &amp; Financing
                   </Link>
-                  <Link to="/academy/diversity" className="navbar-item">
-                    Diversity
+                  <Link
+                    to="/academy/tuition/scholarships"
+                    className="navbar-item"
+                  >
+                    Diversity &amp; Scholarships
                   </Link>
                   <Link to="/academy/success" className="navbar-item">
                     Success Stories

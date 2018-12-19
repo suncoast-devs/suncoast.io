@@ -5,11 +5,11 @@ import { withPrefix } from 'gatsby'
 
 const BrandPage = () => (
   <Layout>
-    <section class="hero">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title">Brand Identity</h1>
-          <h2 class="subtitle">
+    <section className="hero">
+      <div className="hero-body">
+        <div className="container">
+          <h1 className="title">Brand Identity</h1>
+          <h2 className="subtitle">
             Guidelines for using the Suncoast Developers Guild Brand
           </h2>
         </div>
@@ -17,8 +17,8 @@ const BrandPage = () => (
     </section>
     <section className="brand section">
       <div className="container">
-        <article class="message is-primary">
-          <div class="message-body">
+        <article className="message is-primary">
+          <div className="message-body">
             <strong>Note</strong>: This document is a <em>work in progress</em>.
           </div>
         </article>

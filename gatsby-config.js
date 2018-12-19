@@ -9,12 +9,7 @@ module.exports = {
         trackingId: 'UA-120953554-1',
       },
     },
-    {
-      resolve: 'gatsby-plugin-netlify-cms',
-      options: {
-        modulePath: `${__dirname}/src/cms/index.js`,
-      },
-    },
+    'gatsby-plugin-netlify-cms',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
@@ -42,6 +37,20 @@ module.exports = {
       options: {
         name: 'data',
         path: `${__dirname}/data/`,
+      },
+    },
+    {
+      resolve: `gatsby-mdx`,
+      options: {
+        gatsbyRemarkPlugins: [
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 1035,
+              sizeByPixelDensity: true,
+            },
+          },
+        ],
       },
     },
     'gatsby-transformer-sharp',
