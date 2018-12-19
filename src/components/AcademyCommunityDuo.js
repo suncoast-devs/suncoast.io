@@ -46,8 +46,7 @@ const AcademyCommunityDuo = () => (
             </figure>
             <p className="has-text-left">
               With thousands of members across dozens of local groups, our
-              members touch all aspects of technology development across Tampa
-              Bay.
+              members touch all aspects of technology development in Tampa Bay.
             </p>
             <p>
               <a
