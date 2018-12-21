@@ -1,8 +1,9 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 
-const PageHeading = ({ children, hidden }) => {
-  const helmet = <Helmet title={`${children} @ Suncoast Developers Guild`} />
+const PageHeading = ({ children, hidden, seo }) => {
+  const title = seo ? `${children} (${seo})` : children
+  const helmet = <Helmet title={`${title} @ Suncoast Developers Guild`} />
   return hidden ? (
     helmet
   ) : (

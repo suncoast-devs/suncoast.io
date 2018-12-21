@@ -1,25 +1,23 @@
 import React from 'react'
 import Layout from '../../components/Layout'
 import Container from '../../components/Container'
-import PageTitle from '../../components/PageTitle'
 import Section from '../../components/Section'
-import MailingListForm from '../../components/MailingListForm'
+import PageTitle from '../../components/PageTitle'
 import AcademyNavigation from '../../components/academy/AcademyNavigation'
 import ProgramNavigation from '../../components/academy/ProgramNavigation'
-import OurCurriculum from '../../components/academy/OurCurriculum'
+import DailySchedule from '../../components/academy/DailySchedule'
 
-const AcademyIndex = () => (
+const AcademySchedule = () => (
   <Layout>
     <AcademyNavigation />
     <Section>
       <Container>
-        <PageTitle seo="Our Curriculum">Web Development Program</PageTitle>
+        <PageTitle seo="Daily Schedule">Web Development Program</PageTitle>
         <ProgramNavigation />
-        <OurCurriculum />
+        <DailySchedule />
       </Container>
     </Section>
-    <MailingListForm />
   </Layout>
 )
 
-export default AcademyIndex
+export default AcademySchedule

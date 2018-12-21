@@ -76,3 +76,12 @@ html.landing {
     display: block;
   }
 }
+
+// TODO: IMPROVE responsive tabs
+.tabs {
+  @include until($tablet * 0.66) {
+    ul {
+      flex-direction: column;
+    }
+  }
+}
