@@ -17,7 +17,9 @@ const ProgramCatalog = () => (
             <span className="panel-icon">
               <i className="far fa-file-pdf fa-lg" />
             </span>
-            <a href="#TODO">Download Program Catalog</a>
+            <a href="/catalog.pdf" download>
+              Download Program Catalog
+            </a>
           </div>
         </nav>
       </div>
