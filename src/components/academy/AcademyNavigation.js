@@ -14,7 +14,7 @@ const NavItem = ({ to, icon, children }) => (
     <div>
       <Link activeClassName="is-active" to={to}>
         <Icon i={icon} />
-        <span class="heading">{children}</span>
+        <span className="heading">{children}</span>
       </Link>
     </div>
   </div>

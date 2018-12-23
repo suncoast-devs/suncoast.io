@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { globalHistory as history } from '@reach/router/lib/history'
-import Link from 'gatsby-link'
+import Link from './NavLink'
 import cx from 'classnames'
 import button from '../images/button.svg'
 
@@ -109,16 +109,16 @@ class MainNavigation extends Component {
                   Community
                 </Link>
                 <div className="navbar-dropdown">
-                  <Link to="/community/" className="navbar-item">
+                  <Link to="/community/organizations" className="navbar-item">
                     Member Organizations
                   </Link>
-                  <Link to="/community/" className="navbar-item">
+                  <Link to="/community/sponsors" className="navbar-item">
                     Corporate Sponsors
                   </Link>
-                  <Link to="/community/" className="navbar-item">
+                  <Link to="/community/training" className="navbar-item">
                     Join Training
                   </Link>
-                  <Link to="/community/" className="navbar-item">
+                  <Link to="/community/sponsorship" className="navbar-item">
                     Sponsorship
                   </Link>
                 </div>

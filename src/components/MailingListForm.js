@@ -12,16 +12,16 @@ const MailingListForm = () => (
           </p>
           <div className="field is-grouped">
             <div className="control is-expanded">
-              <label class="label is-small">First Name</label>
+              <label className="label is-small">First Name</label>
               <input type="text" className="input" placeholder="Something" />
             </div>
             <div className="control is-expanded">
-              <label class="label is-small">Last Name</label>
+              <label className="label is-small">Last Name</label>
               <input type="text" className="input" placeholder="Clever" />
             </div>
           </div>
           <div className="field">
-            <label class="label is-small">Email Address</label>
+            <label className="label is-small">Email Address</label>
             <p className="control has-icons-left has-icons-right">
               <input
                 className="input"

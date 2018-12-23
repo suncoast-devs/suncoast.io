@@ -10,7 +10,7 @@ const Footer = () => (
     <div className="container">
       <div className="columns">
         <div className="column is-three-fifths">
-          <figure class="image is-128x128">
+          <figure className="image is-128x128">
             <img src={bouy} alt="SDG Bouy Logo" />
           </figure>
           <div className="content">

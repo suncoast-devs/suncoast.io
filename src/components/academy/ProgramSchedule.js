@@ -25,7 +25,7 @@ const ProgramSchedule = () => (
             January 25<sup>th</sup>, 2018
           </td>
         </tr>
-        <tr class="upcoming">
+        <tr className="upcoming">
           <td>Cohort XIII</td>
           <td>
             <Link to="/academy/apply">Now Enrolling</Link>
