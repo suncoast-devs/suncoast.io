@@ -9,7 +9,6 @@ module.exports = {
         trackingId: 'UA-120953554-1',
       },
     },
-    'gatsby-plugin-netlify-cms',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
