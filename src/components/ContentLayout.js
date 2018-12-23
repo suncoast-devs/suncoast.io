@@ -9,7 +9,7 @@ const ContentLayout = ({ children, title, subTitle, nav, subNav }) => (
     {nav}
     <Section>
       <Container>
-        <PageTitle seo={seoTitle}>{title}</PageTitle>
+        <PageTitle seo={subTitle}>{title}</PageTitle>
         {subNav}
         <div className="content">{children}</div>
       </Container>

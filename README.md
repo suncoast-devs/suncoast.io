@@ -13,3 +13,4 @@
 - [ ] Improve academy/community navigation active states
 - [ ] create PWA
 - [ ] Now enrolling banner
+- [ ] 404 illustration
