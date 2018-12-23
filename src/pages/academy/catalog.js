@@ -1,23 +1,18 @@
 import React from 'react'
-import Layout from '../../components/Layout'
-import Container from '../../components/Container'
-import Section from '../../components/Section'
-import PageTitle from '../../components/PageTitle'
+import ContentLayout from '../../components/ContentLayout'
 import AcademyNavigation from '../../components/academy/AcademyNavigation'
 import ProgramNavigation from '../../components/academy/ProgramNavigation'
 import ProgramCatalog from '../../components/academy/ProgramCatalog'
 
 const AcademyCatalog = () => (
-  <Layout>
-    <AcademyNavigation />
-    <Section>
-      <Container>
-        <PageTitle seo="Program Catalog">Web Development Program</PageTitle>
-        <ProgramNavigation />
-        <ProgramCatalog />
-      </Container>
-    </Section>
-  </Layout>
+  <ContentLayout
+    title="Web Development Program"
+    subTitle="Program Catalog"
+    nav={<AcademyNavigation />}
+    subNav={<ProgramNavigation />}
+  >
+    <ProgramCatalog />
+  </ContentLayout>
 )
 
 export default AcademyCatalog

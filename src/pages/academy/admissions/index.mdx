@@ -1,19 +1,38 @@
-import Layout from '../../../components/Layout'
-import Container from '../../../components/Container'
-import Section from '../../../components/Section'
-import PageTitle from '../../../components/PageTitle'
+import ContentLayout from '../../../components/ContentLayout'
 import AcademyNavigation from '../../../components/academy/AcademyNavigation'
+import AdmissionsNavigation from '../../../components/academy/AdmissionsNavigation'
 
-export default ({children}) => (
-  <Layout>
-    <AcademyNavigation />
-    <Section>
-      <Container>
-        <PageTitle seo="Application Process">Admissions</PageTitle>
-        <div className="content">{children}</div>
-      </Container>
-    </Section>
-  </Layout>
+export default ({ children }) => (
+  <ContentLayout
+    title="Admissions"
+    subTitle="Application Process"
+    nav={<AcademyNavigation />}
+    subNav={<AdmissionsNavigation />}
+  >
+    {children}
+  </ContentLayout>
 )
 
 ### Application Process
+
+Admissions to the Suncoast Developers Guild’s Web Development program is done through our website. To apply, prospective students will complete and submit the application online. Questions answered in the application will assist faculty and staff in considering candidates.
+
+Technology-oriented interests and career goals, motivation, problem solving skills, and creativity will be primary indicators when evaluating an applicant’s potential. Previous work and educational experience will also be considered. Students must be at least 18 years of age and hold a high school diploma or equivalent.
+
+Applicants will be invited to a series of interviews with a combination of: the Program Director, instructors, and alumni of the program. If a consensus is found that the applicant is a good fit for the program, the student will be notified of acceptance. A signed Student Enrollment Agreement is also required. The Student Enrollment Agreement will not be signed by the school prior to the student signing the document.
+
+### Diversity Scholarship
+
+Suncoast Developers Guild seeks to narrow the gaps in our industry by introducing local companies to diverse talent. We offer a scholarship to members of communities that are underrepresented in technology.
+
+- This opportunity is available, but not limited to: self-identifying women, people of color, individuals with disabilities, and the LGBTQ community. Members of all underrepresented groups may apply for this scholarship.
+- We will deduct the scholarship amount from the total cost of tuition.
+
+Apply for the [Suncoast Developers Guild Diversity Scholarship](/academy/diversity).
+
+Notice of Nondiscriminatory Policy as to Students
+Suncoast Developers Guild, Inc. does not and shall not discriminate on the basis of race, color, national origin, religion, creed, age, disability, military or veteran's status, sexual orientation, gender, gender identity, or gender expression, in any of its activities or operations. These activities include, but are not limited to: hiring and firing of staff, selection of volunteers and vendors, and provision of services, administration of its educational policies, admissions policies, scholarships, and other programs. We are committed to providing an inclusive and welcoming environment for our staff, students, volunteers, and members.
+
+### Program Catalog
+
+For more information about our program and the admissions process [download our program catalog](/academy/catalog).
