@@ -1,0 +1,19 @@
+import Layout from '../../../components/Layout'
+import Container from '../../../components/Container'
+import Section from '../../../components/Section'
+import PageTitle from '../../../components/PageTitle'
+import AcademyNavigation from '../../../components/academy/AcademyNavigation'
+
+export default ({children}) => (
+  <Layout>
+    <AcademyNavigation />
+    <Section>
+      <Container>
+        <PageTitle seo="Application Process">Admissions</PageTitle>
+        <div className="content">{children}</div>
+      </Container>
+    </Section>
+  </Layout>
+)
+
+### Application Process

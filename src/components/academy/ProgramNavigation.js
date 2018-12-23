@@ -14,7 +14,7 @@ const NavTab = ({ to, children }) => (
       >
         <Link to={to}>{children}</Link>
       </li>
-  }
+    )}
   </Location>
 )
 

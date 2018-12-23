@@ -12,3 +12,4 @@
 - [ ] Improve main navigation active states
 - [ ] Improve academy/community navigation active states
 - [ ] create PWA
+- [ ] Now enrolling banner
