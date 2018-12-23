@@ -14,7 +14,7 @@ const DailySchedule = () => (
       <tbody>
         <tr>
           <th>09:00&nbsp;AM</th>
-          <td>Instructor’s Hour / Warmup Lab</td>
+          <td>Stand-ups / Warmup Lab</td>
           <td>Career Support Lab</td>
         </tr>
         <tr>
@@ -32,20 +32,21 @@ const DailySchedule = () => (
         </tr>
         <tr>
           <th>01:00&nbsp;PM</th>
-          <td colSpan="2">Lab</td>
+          <td rowSpan="2">Lab</td>
+          <td>Lab</td>
         </tr>
         <tr>
           <th>02:00&nbsp;PM</th>
-          <td>Classroom: “Review at Two”</td>
           <td>Huddles</td>
         </tr>
         <tr>
           <th>03:00&nbsp;PM</th>
-          <td rowSpan="2">Lab</td>
+          <td>Classroom: &ldquo;With me at Three&rdquo;</td>
           <td rowSpan="3">End of Day / Optional Social Time</td>
         </tr>
         <tr>
           <th>04:00&nbsp;PM</th>
+          <td>Lab</td>
         </tr>
         <tr>
           <th>05:00&nbsp;PM</th>
@@ -55,7 +56,7 @@ const DailySchedule = () => (
     </table>
     <div className="content">
       <p>
-        The day begins at 9am. This time is used by instructors for reviewing
+        The day begins at 9 a.m. This time is used by instructors for reviewing
         the previous night’s assignments and planning the day’s lecture and
         activities accordingly. Students use this first hour to do warmup
         exercises and review daily content. At least one Instructor will be
@@ -64,12 +65,12 @@ const DailySchedule = () => (
       </p>
 
       <p>
-        The day for students really gets going at 10am with two hours of class
-        time (lecture, activities, etc.). After lunch is an hour of lab time
-        where students will begin work on the day’s assignment. At 2pm class
-        will reconvene for an hour to reinforce the days concepts and answer
-        questions that may arise while working on the assignment. Following the
-        review, lab hours continue for the rest of the afternoon.
+        The day for students really gets going at 10 a.m. with two hours of
+        class time (lecture, activities, etc.). After lunch is an hour of lab
+        time where students will begin work on the day’s assignment. At 2 p.m.
+        class will reconvene for an hour to reinforce the days concepts and
+        answer questions that may arise while working on the assignment.
+        Following the review, lab hours continue for the rest of the afternoon.
       </p>
 
       <p>

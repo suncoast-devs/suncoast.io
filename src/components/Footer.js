@@ -22,7 +22,7 @@ const Footer = () => (
               Questions? <Link to="/contact">Contact us.</Link>
             </p>
           </div>
-          <nav className="level">
+          <nav className="level is-mobile">
             <div className="level-left">
               <p className="level-item">
                 <OutboundLink href="https://www.facebook.com/SuncoastDevelopersGuild/">

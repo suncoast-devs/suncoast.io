@@ -5,6 +5,7 @@ import Section from '../../components/Section'
 import PageTitle from '../../components/PageTitle'
 import AcademyNavigation from '../../components/academy/AcademyNavigation'
 import ProgramNavigation from '../../components/academy/ProgramNavigation'
+import ProgramCatalog from '../../components/academy/ProgramCatalog'
 
 const AcademyCatalog = () => (
   <Layout>
@@ -13,7 +14,7 @@ const AcademyCatalog = () => (
       <Container>
         <PageTitle seo="Program Catalog">Web Development Program</PageTitle>
         <ProgramNavigation />
-        <h3 className="title is-3">Program Catalog</h3>
+        <ProgramCatalog />
       </Container>
     </Section>
   </Layout>
