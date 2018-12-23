@@ -11,3 +11,4 @@
 - [ ] Organize UI components from content components
 - [ ] Improve main navigation active states
 - [ ] Improve academy/community navigation active states
+- [ ] create PWA
