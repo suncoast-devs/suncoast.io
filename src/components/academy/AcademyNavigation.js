@@ -36,11 +36,11 @@ const ProgramNavigation = () => (
           <NavItem to="/academy/admissions" icon="fas fa-graduation-cap fa-lg">
             Admissions
           </NavItem>
-          <NavItem to="/academy/tution" icon="fas fa-money-check fa-lg">
+          <NavItem to="/academy/tuition" icon="fas fa-money-check fa-lg">
             Tuition
           </NavItem>
           <NavItem
-            to="/academy/tution/scholarships"
+            to="/academy/tuition/scholarships"
             icon="fas fa-seedling fa-lg"
           >
             Scholarships &amp; Diversity

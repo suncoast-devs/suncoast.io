@@ -14,3 +14,4 @@
 - [ ] create PWA
 - [ ] Now enrolling banner
 - [ ] 404 illustration
+- [ ] Outbound Links for analytics

@@ -39,3 +39,11 @@ exports.createPages = ({ graphql, actions }) => {
     )
   })
 }
+
+exports.onCreatePage = ({ page, actions }) => {
+  const { createPage } = actions
+  if (page.path === `/academy/success/`) {
+    page.matchPath = `/academy/success/*`
+    createPage(page)
+  }
+}

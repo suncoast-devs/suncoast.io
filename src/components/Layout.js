@@ -23,8 +23,16 @@ const Layout = ({ children }) => (
     render={data => (
       <MDXProvider
         components={{
-          h3: props => <h3 className="title is-3" {...props} />,
-          h4: props => <h4 className="title is-4" {...props} />,
+          h3: ({ children, ...rest }) => (
+            <h3 className="title is-3" {...rest}>
+              {children}
+            </h3>
+          ),
+          h4: ({ children, ...rest }) => (
+            <h4 className="title is-4" {...rest}>
+              {children}
+            </h4>
+          ),
         }}
       >
         <Helmet title={data.site.siteMetadata.title}>

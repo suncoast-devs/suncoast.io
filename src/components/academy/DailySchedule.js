@@ -2,59 +2,59 @@ import React from 'react'
 
 const DailySchedule = () => (
   <>
-    <h3 className="title is-3">Daily Schedule</h3>
-    <table className="table is-bordered is-fullwidth">
-      <thead>
-        <tr>
-          <td />
-          <th>Monday–Thursday</th>
-          <th>Friday</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th>09:00&nbsp;AM</th>
-          <td>Stand-ups / Warmup Lab</td>
-          <td>Career Support Lab</td>
-        </tr>
-        <tr>
-          <th>10:00&nbsp;AM</th>
-          <td rowSpan="2">Classroom</td>
-          <td>Career Support Lecture</td>
-        </tr>
-        <tr>
-          <th>11:00&nbsp;AM</th>
-          <td>Weekly Review (or extended Career Support)</td>
-        </tr>
-        <tr>
-          <th>12:00&nbsp;PM</th>
-          <td colSpan="2">Lunch</td>
-        </tr>
-        <tr>
-          <th>01:00&nbsp;PM</th>
-          <td rowSpan="2">Lab</td>
-          <td>Lab</td>
-        </tr>
-        <tr>
-          <th>02:00&nbsp;PM</th>
-          <td>Huddles</td>
-        </tr>
-        <tr>
-          <th>03:00&nbsp;PM</th>
-          <td>Classroom: &ldquo;With me at Three&rdquo;</td>
-          <td rowSpan="3">End of Day / Optional Social Time</td>
-        </tr>
-        <tr>
-          <th>04:00&nbsp;PM</th>
-          <td>Lab</td>
-        </tr>
-        <tr>
-          <th>05:00&nbsp;PM</th>
-          <td>End of Day</td>
-        </tr>
-      </tbody>
-    </table>
     <div className="content">
+      <h3 className="title is-3">Daily Schedule</h3>
+      <table className="table is-bordered is-fullwidth">
+        <thead>
+          <tr>
+            <td />
+            <th>Monday–Thursday</th>
+            <th>Friday</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>09:00&nbsp;AM</th>
+            <td>Stand-ups / Warmup Lab</td>
+            <td>Career Support Lab</td>
+          </tr>
+          <tr>
+            <th>10:00&nbsp;AM</th>
+            <td rowSpan="2">Classroom</td>
+            <td>Career Support Lecture</td>
+          </tr>
+          <tr>
+            <th>11:00&nbsp;AM</th>
+            <td>Weekly Review (or extended Career Support)</td>
+          </tr>
+          <tr>
+            <th>12:00&nbsp;PM</th>
+            <td colSpan="2">Lunch</td>
+          </tr>
+          <tr>
+            <th>01:00&nbsp;PM</th>
+            <td rowSpan="2">Lab</td>
+            <td>Lab</td>
+          </tr>
+          <tr>
+            <th>02:00&nbsp;PM</th>
+            <td>Huddles</td>
+          </tr>
+          <tr>
+            <th>03:00&nbsp;PM</th>
+            <td>Classroom: &ldquo;With me at Three&rdquo;</td>
+            <td rowSpan="3">End of Day / Optional Social Time</td>
+          </tr>
+          <tr>
+            <th>04:00&nbsp;PM</th>
+            <td>Lab</td>
+          </tr>
+          <tr>
+            <th>05:00&nbsp;PM</th>
+            <td>End of Day</td>
+          </tr>
+        </tbody>
+      </table>
       <p>
         The day begins at 9 a.m. This time is used by instructors for reviewing
         the previous night’s assignments and planning the day’s lecture and
