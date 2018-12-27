@@ -18,8 +18,17 @@ const ScholarshipsPage = ({ data }) => (
         <h3 className="title is-3">Scholarships</h3>
         {data.allContentfulScholarship.edges.map(({ node: scholarship }) => (
           <React.Fragment key="f">
-            <div className="columns">
-              <div className="column is-3">
+            <div className="columns is-mobile">
+              <div className="column">
+                <h4 className="title is-4">{scholarship.name}</h4>
+                <div
+                  className="content"
+                  dangerouslySetInnerHTML={{
+                    __html: scholarship.description.childMarkdownRemark.html,
+                  }}
+                />
+              </div>
+              <div className="column is-narrow">
                 <figure className="image">
                   <a href={scholarship.url}>
                     <Image
@@ -35,15 +44,6 @@ const ScholarshipsPage = ({ data }) => (
                   </a>
                 </p>
               </div>
-              <div className="column">
-                <h4 className="title is-4">{scholarship.name}</h4>
-                <div
-                  className="content"
-                  dangerouslySetInnerHTML={{
-                    __html: scholarship.description.childMarkdownRemark.html,
-                  }}
-                />
-              </div>
             </div>
             <hr />
           </React.Fragment>
@@ -57,7 +57,7 @@ export default ScholarshipsPage
 
 export const pageQuery = graphql`
   query {
-    allContentfulScholarship {
+    allContentfulScholarship(sort: { fields: position }) {
       edges {
         node {
           name

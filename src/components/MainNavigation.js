@@ -112,10 +112,10 @@ class MainNavigation extends Component {
                   <Link to="/community" className="navbar-item">
                     Member Organizations
                   </Link>
-                  <Link to="/community/sponsors" className="navbar-item">
-                    Corporate Sponsors
+                  <Link to="/community/supporters" className="navbar-item">
+                    Supporters
                   </Link>
-                  <Link to="/community/sponsorship" className="navbar-item">
+                  <Link to="/community/sponsor" className="navbar-item">
                     Sponsorship
                   </Link>
                 </div>

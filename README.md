@@ -20,3 +20,8 @@
 - [ ] Make the email subscribe form live (AC?)
 - [ ] Program Application
 - [ ] Diversity Scholarship Application
+- [ ] Improve Hiring Network responsiveness
+- [ ] Add Handbook
+- [ ] Add SEO header/meta tags
+- [ ] RSS Feed
+- [ ] Sitemap

@@ -11,6 +11,7 @@ const AcademyCatalog = ({ data }) => (
     <AcademyNavigation />
     <Section>
       <Container>
+        {/* eslint-disable-next-line */}
         <a name="top" />
         <PageTitle>Frequently Asked Questions</PageTitle>
         <div className="content">
@@ -27,6 +28,7 @@ const AcademyCatalog = ({ data }) => (
         {data.allContentfulFaq.edges.map(({ node: faq }) => (
           <React.Fragment key={faq.slug}>
             <hr />
+            {/* eslint-disable-next-line */}
             <a
               name={faq.slug}
               style={{ position: 'absolute', marginTop: '-68px' }}
