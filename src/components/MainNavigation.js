@@ -50,12 +50,11 @@ class MainNavigation extends Component {
             <Link to="/" className="navbar-item">
               <img src={button} alt="SDG Button Icon" height="28" width="28" />
             </Link>
-            <Link
-              to="/"
-              className="navbar-item has-text-weight-bold is-uppercase"
-            >
-              Suncoast Developers Guild
-            </Link>
+            <h1 className="navbar-item">
+              <Link to="/" className="has-text-weight-bold is-uppercase">
+                Suncoast Developers Guild
+              </Link>
+            </h1>
             <span
               className={cx('navbar-burger burger', {
                 'is-active': active,

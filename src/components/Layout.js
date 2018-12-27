@@ -23,6 +23,16 @@ const Layout = ({ children }) => (
     render={data => (
       <MDXProvider
         components={{
+          h1: ({ children, ...rest }) => (
+            <h1 className="title is-1" {...rest}>
+              {children}
+            </h1>
+          ),
+          h2: ({ children, ...rest }) => (
+            <h2 className="title is-2" {...rest}>
+              {children}
+            </h2>
+          ),
           h3: ({ children, ...rest }) => (
             <h3 className="title is-3" {...rest}>
               {children}
