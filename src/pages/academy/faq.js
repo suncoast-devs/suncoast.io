@@ -1,4 +1,5 @@
 import React from 'react'
+import { graphql } from 'gatsby'
 import Layout from '../../components/Layout'
 import Container from '../../components/Container'
 import PageTitle from '../../components/PageTitle'
@@ -59,7 +60,7 @@ export default AcademyCatalog
 
 export const pageQuery = graphql`
   query {
-    allContentfulFaq {
+    allContentfulFaq(sort: { fields: position }) {
       edges {
         node {
           question

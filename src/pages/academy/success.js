@@ -1,12 +1,13 @@
 import React from 'react'
+import { graphql } from 'gatsby'
 import Image from 'gatsby-image'
 import { Router, Link } from '@reach/router'
 import Layout from '../../components/Layout'
 import Container from '../../components/Container'
 import Section from '../../components/Section'
-import Icon from '../../components/Icon'
 import PageTitle from '../../components/PageTitle'
 import AcademyNavigation from '../../components/academy/AcademyNavigation'
+import PersonModal from '../../components/PersonModal'
 
 const Stories = ({ children, stories }) => (
   <>
@@ -54,76 +55,12 @@ const Stories = ({ children, stories }) => (
 
 const Story = ({ slug, stories }) => {
   const story = stories.find(s => s.node.slug === slug).node
-  console.log({ story })
   return (
-    <div className="modal is-active">
-      <div className="modal-background" />
-      <div className="modal-content">
-        <div className="card">
-          <div className="card-image">
-            <Image
-              className="image is-4by3"
-              Tag="figure"
-              fixed={story.student.image.large}
-              alt={story.student.image.description}
-            />
-          </div>
-          <div className="card-content">
-            <h3 className="title is-3">{story.student.name}</h3>
-            <div
-              className="content"
-              dangerouslySetInnerHTML={{
-                __html: story.story.childMarkdownRemark.html,
-              }}
-            />
-            <nav className="level">
-              <div className="level-left" />
-              <div className="level-right">
-                {story.student.github && (
-                  <p className="level-item">
-                    <a href={`https://github.com/${story.student.github}`}>
-                      <Icon i="fab fa-github fa-lg" />
-                    </a>
-                  </p>
-                )}
-                {story.student.linkedIn && (
-                  <p className="level-item">
-                    <a
-                      href={`https://www.linkedin.com/in/${
-                        story.student.linkedIn
-                      }/`}
-                    >
-                      <Icon i="fab fa-linkedin fa-lg" />
-                    </a>
-                  </p>
-                )}
-                {story.student.twitter && (
-                  <p className="level-item">
-                    <a href={`https://twitter.com/${story.student.twitter}`}>
-                      <Icon i="fab fa-twitter fa-lg" />
-                    </a>
-                  </p>
-                )}
-                {story.student.blogUrl && (
-                  <p className="level-item">
-                    <a href={story.student.blogUrl}>
-                      <Icon
-                        i={
-                          story.student.blogUrl.includes('medium.com')
-                            ? 'fab fa-medium fa-lg'
-                            : 'fas fa-blog fa-lg'
-                        }
-                      />
-                    </a>
-                  </p>
-                )}
-              </div>
-            </nav>
-          </div>
-        </div>
-      </div>
-      <Link className="modal-close is-large" to="/academy/success" />
-    </div>
+    <PersonModal
+      person={story.student}
+      content={story.story}
+      returnTo="/academy/success"
+    />
   )
 }
 
@@ -168,8 +105,8 @@ export const pageQuery = graphql`
               fixed(width: 128, height: 128) {
                 ...GatsbyContentfulFixed_withWebp
               }
-              large: fixed(width: 640, height: 480) {
-                ...GatsbyContentfulFixed_withWebp
+              modal: fluid(maxWidth: 800, maxHeight: 600) {
+                ...GatsbyContentfulFluid_withWebp
               }
               description
             }

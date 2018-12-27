@@ -42,8 +42,22 @@ exports.createPages = ({ graphql, actions }) => {
 
 exports.onCreatePage = ({ page, actions }) => {
   const { createPage } = actions
-  if (page.path === `/academy/success/`) {
-    page.matchPath = `/academy/success/*`
-    createPage(page)
+  switch (page.path) {
+    case `/academy/success/`:
+      page.matchPath = `/academy/success/*`
+      createPage(page)
+      break
+    case `/team/volunteers/`:
+      page.matchPath = `/team/volunteers/*`
+      createPage(page)
+      break
+    case `/team/advisory/`:
+      page.matchPath = `/team/advisory/*`
+      createPage(page)
+      break
+    case `/team/`:
+      page.matchPath = `/team/*`
+      createPage(page)
+      break
   }
 }

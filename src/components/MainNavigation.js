@@ -105,18 +105,15 @@ class MainNavigation extends Component {
                 </div>
               </div>
               <div className="navbar-item has-dropdown is-hoverable">
-                <Link to="/academy" className="navbar-link">
+                <Link to="/community" className="navbar-link">
                   Community
                 </Link>
                 <div className="navbar-dropdown">
-                  <Link to="/community/organizations" className="navbar-item">
+                  <Link to="/community" className="navbar-item">
                     Member Organizations
                   </Link>
                   <Link to="/community/sponsors" className="navbar-item">
                     Corporate Sponsors
-                  </Link>
-                  <Link to="/community/training" className="navbar-item">
-                    Join Training
                   </Link>
                   <Link to="/community/sponsorship" className="navbar-item">
                     Sponsorship
@@ -129,6 +126,9 @@ class MainNavigation extends Component {
               </Link>
               <Link to="/blog" className="navbar-item">
                 Blog
+              </Link>
+              <Link to="/contact" className="navbar-item">
+                Contact
               </Link>
             </div>
             <div className="navbar-end">
