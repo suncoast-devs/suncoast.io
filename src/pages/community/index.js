@@ -24,7 +24,7 @@ const CommunityIndex = ({ data }) => (
         <h3 className="title is-3">Our Member Organizations</h3>
         <div className="columns is-multiline">
           {data.allContentfulMemberOrganization.edges.map(({ node: org }) => (
-            <div className="column is-half">
+            <div className="column is-half" key={org.name}>
               <div className="box">
                 <div className="columns has-text-centered is-vcentered">
                   <div className="column is-narrow">
