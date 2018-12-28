@@ -20,14 +20,14 @@ const FinancingPage = ({ data }) => (
           <React.Fragment key="f">
             <div className="columns">
               <div className="column is-3">
-                <figure className="image">
-                  <a href={partner.url}>
-                    <Image
-                      fluid={partner.logo.fluid}
-                      alt={partner.logo.description}
-                    />
-                  </a>
-                </figure>
+                <a href={partner.url}>
+                  <Image
+                    tag="figure"
+                    className="image"
+                    fluid={partner.logo.fluid}
+                    alt={partner.logo.description}
+                  />
+                </a>
                 <br />
                 <p className="has-text-centered">
                   <a href={partner.url} className="button is-link">

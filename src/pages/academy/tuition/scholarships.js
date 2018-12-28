@@ -29,14 +29,14 @@ const ScholarshipsPage = ({ data }) => (
                 />
               </div>
               <div className="column is-narrow">
-                <figure className="image">
-                  <a href={scholarship.url}>
-                    <Image
-                      fluid={scholarship.logo.fluid}
-                      alt={scholarship.logo.description}
-                    />
-                  </a>
-                </figure>
+                <a href={scholarship.url}>
+                  <Image
+                    Tag="figure"
+                    className="image"
+                    fluid={scholarship.logo.fluid}
+                    alt={scholarship.logo.description}
+                  />
+                </a>
                 <br />
                 <p className="has-text-centered">
                   <a href={scholarship.url} className="button is-link">

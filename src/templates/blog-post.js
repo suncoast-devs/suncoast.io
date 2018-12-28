@@ -40,9 +40,11 @@ const BlogPost = ({ data }) => {
             <div className="column is-8">
               <article className="media">
                 <figure className="media-left">
-                  <p className="image is-48x48">
-                    <Image fixed={post.author.image.fixed} />
-                  </p>
+                  <Image
+                    Tag="figure"
+                    className="image"
+                    fixed={post.author.image.fixed}
+                  />
                 </figure>
                 <div className="media-content">
                   <h4 className="title is-4">{post.author.name}</h4>

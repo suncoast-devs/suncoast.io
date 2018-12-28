@@ -55,12 +55,12 @@ const BlogIndex = ({ data }) => {
                     <hr />
                     <Media className="media">
                       <div className="media-left">
-                        <figure className="image is-24x24">
-                          <Image
-                            fixed={post.author.image.fixed}
-                            alt={post.author.image.description}
-                          />
-                        </figure>
+                        <Image
+                          Tag="figure"
+                          className="image"
+                          fixed={post.author.image.fixed}
+                          alt={post.author.image.description}
+                        />
                       </div>
                       <div className="media-content">
                         <h4 className="title is-4">{post.author.name}</h4>

@@ -17,7 +17,7 @@ const Stories = ({ children, stories }) => (
           <div className="column is-narrow">
             <Link to={story.slug}>
               <Image
-                className="image is-128x128"
+                className="image"
                 Tag="figure"
                 fixed={story.student.image.fixed}
                 alt={story.student.image.description}

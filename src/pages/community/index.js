@@ -31,7 +31,7 @@ const CommunityIndex = ({ data }) => (
                     <a href={org.url}>
                       <Image
                         Tag="figure"
-                        className="image is-64x64"
+                        className="image"
                         fixed={org.logo.fixed}
                         alt={org.logo.description}
                       />
