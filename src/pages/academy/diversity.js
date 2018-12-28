@@ -27,7 +27,7 @@ class DiversityScholarship extends React.Component {
 
   _submit = event => {
     event.preventDefault()
-    fetch(process.env.GATEWAY_API_URL, {
+    fetch(`${process.env.GATEWAY_API_URL}/apply`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json; charset=utf-8',

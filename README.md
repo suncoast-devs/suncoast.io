@@ -2,28 +2,39 @@
 
 ## TODOs
 
-- [ ] mini-carousel of photos for "Take a Tour"
+### Content
+
+- [x] Program Application
+- [x] Diversity Scholarship Application
+- [ ] Contact page
+- [x] Make the email subscribe form live
+- [ ] Add Handbook
+- [ ] Mini-carousel of photos for "Take a Tour"
+
+### Illustrations
+
+- [ ] Curriculum infographic
 - [ ] Academy illustration
 - [ ] Community illustration
 - [ ] Mission/Org illustration
-- [ ] Curriculum infographic
-- [x] Re-organize styles
-- [ ] Organize UI components from content components
+- [ ] Thanks illustration (also shown on mailing list modal)
+- [ ] 404 illustration
+
+### Design
+
 - [ ] Improve main navigation active states
 - [ ] Improve academy/community navigation active states
-- [ ] Create PWA
 - [ ] Now enrolling banner
-- [ ] 404 illustration
+- [ ] Improve responsive tab navigation
+
+### Technical Debt
+
+- [x] Re-organize styles
 - [ ] Outbound Links for analytics
-- [ ] Add alumni count to sort Hiring Network
-- [ ] Contact page
-- [ ] Make the email subscribe form live (AC?)
-- [x] Program Application
-- [x] Diversity Scholarship Application
-- [ ] Improve Hiring Network responsiveness
-- [ ] Add Handbook
+- [ ] Sitemap
 - [ ] Add SEO header/meta tags
 - [ ] RSS Feed
-- [ ] Sitemap
-- [ ] Improve responsive tab navigation
-- [ ] Thanks illustration
+- [ ] Create PWA
+- [ ] Improve Hiring Network responsiveness
+- [ ] Add alumni count to sort Hiring Network
+- [ ] Organize UI components from content components

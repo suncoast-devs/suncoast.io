@@ -39,7 +39,7 @@ class ProgramApplication extends Component {
     event.preventDefault()
 
     if (this.state.step === 0) {
-      const { id: token } = await fetch(GATEWAY_API_URL, {
+      const { id: token } = await fetch(`${GATEWAY_API_URL}/apply`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json; charset=utf-8',
@@ -54,7 +54,7 @@ class ProgramApplication extends Component {
     }
 
     if (this.state.step === LAST_STEP) {
-      await fetch(`${GATEWAY_API_URL}/${this.state.token}`, {
+      await fetch(`${GATEWAY_API_URL}/apply/${this.state.token}`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json; charset=utf-8',
