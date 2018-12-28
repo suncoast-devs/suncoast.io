@@ -7,7 +7,7 @@ const INITIAL_STATE = {
   givenName: '',
   familyName: '',
   email: '',
-  thanks: true,
+  thanks: false,
 }
 
 class MailingListForm extends React.Component {
