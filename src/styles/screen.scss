@@ -77,7 +77,6 @@ html.landing {
   }
 }
 
-// TODO: IMPROVE responsive tabs
 .tabs {
   @include until($tablet * 0.66) {
     ul {
@@ -88,4 +87,17 @@ html.landing {
 
 .footnote-backref {
   margin-left: 0.25rem;
+}
+
+.field .control {
+  .radio,
+  .checkbox {
+    > input {
+      margin-right: 0.25rem;
+    }
+  }
+
+  .help:first-child {
+    margin: -0.75rem 0 0.5rem;
+  }
 }

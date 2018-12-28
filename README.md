@@ -25,3 +25,4 @@
 - [ ] Add SEO header/meta tags
 - [ ] RSS Feed
 - [ ] Sitemap
+- [ ] Improve responsive tab navigation

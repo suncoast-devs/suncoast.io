@@ -4,6 +4,7 @@ import Container from '../../components/Container'
 import PageTitle from '../../components/PageTitle'
 import Section from '../../components/Section'
 import AcademyNavigation from '../../components/academy/AcademyNavigation'
+import ProgramApplication from '../../components/ProgramApplication'
 
 const AcademyIndex = () => (
   <Layout>
@@ -11,6 +12,7 @@ const AcademyIndex = () => (
     <Section>
       <Container>
         <PageTitle>Web Development Program Application</PageTitle>
+        <ProgramApplication />
       </Container>
     </Section>
   </Layout>
