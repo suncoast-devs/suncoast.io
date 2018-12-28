@@ -7,7 +7,7 @@
 - [ ] Community illustration
 - [ ] Mission/Org illustration
 - [ ] Curriculum infographic
-- [ ] Convert component-specific styles in screen.css to modules
+- [x] Re-organize styles
 - [ ] Organize UI components from content components
 - [ ] Improve main navigation active states
 - [ ] Improve academy/community navigation active states
@@ -18,7 +18,7 @@
 - [ ] Add alumni count to sort Hiring Network
 - [ ] Contact page
 - [ ] Make the email subscribe form live (AC?)
-- [ ] Program Application
+- [x] Program Application
 - [ ] Diversity Scholarship Application
 - [ ] Improve Hiring Network responsiveness
 - [ ] Add Handbook

@@ -101,6 +101,8 @@ export const pageQuery = graphql`
           }
           student {
             name
+            title
+            company
             image {
               fixed(width: 128, height: 128) {
                 ...GatsbyContentfulFixed_withWebp

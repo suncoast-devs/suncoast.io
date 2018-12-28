@@ -1,0 +1,62 @@
+$dotSize: 2rem;
+$lineSize: 0.2rem;
+
+.steps {
+  width: 100%;
+  margin: 2rem auto;
+
+  ol {
+    counter-reset: step;
+    display: flex;
+    padding-left: 0;
+    justify-content: center;
+
+    li {
+      flex: 1;
+      list-style: none;
+      position: relative;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 0.6rem;
+      color: lighten($asphalt, 20%);
+
+      &:before {
+        content: counter(step);
+        counter-increment: step;
+        width: $dotSize;
+        height: $dotSize;
+        line-height: $dotSize - 0.1rem;
+        font-weight: 600;
+        font-size: 1rem;
+        margin: 0 auto 0.25rem;
+        border-radius: 100%;
+        display: block;
+        text-align: center;
+        background-color: $bright-sky;
+        color: $sand;
+      }
+
+      &.current:before {
+        background-color: $night-sky;
+      }
+
+      &:not(:last-child):after {
+        content: '';
+        display: block;
+        height: $lineSize;
+        width: 100%;
+        position: absolute;
+        top: $dotSize / 2 - $lineSize / 2;
+        left: 50%;
+        z-index: -1;
+        background-color: $bright-sky;
+      }
+
+      &.complete:before,
+      &.complete:after {
+        background-color: $sea;
+      }
+    }
+  }
+}

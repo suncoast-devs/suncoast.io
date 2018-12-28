@@ -1,0 +1,25 @@
+.footnote-backref {
+  margin-left: 0.25rem;
+}
+
+.h-adr {
+  .p-street-address {
+    display: block;
+  }
+}
+
+.subsection + .subsection {
+  margin-top: 3rem;
+}
+
+.title {
+  font-family: $family-secondary;
+}
+
+.tabs {
+  @include until($tablet * 0.66) {
+    ul {
+      flex-direction: column;
+    }
+  }
+}
