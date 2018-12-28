@@ -19,10 +19,11 @@
 - [ ] Contact page
 - [ ] Make the email subscribe form live (AC?)
 - [x] Program Application
-- [ ] Diversity Scholarship Application
+- [x] Diversity Scholarship Application
 - [ ] Improve Hiring Network responsiveness
 - [ ] Add Handbook
 - [ ] Add SEO header/meta tags
 - [ ] RSS Feed
 - [ ] Sitemap
 - [ ] Improve responsive tab navigation
+- [ ] Thanks illustration

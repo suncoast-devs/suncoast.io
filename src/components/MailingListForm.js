@@ -6,7 +6,7 @@ const MailingListForm = () => (
     <div className="container">
       <div className="columns">
         <div className="column is-three-fifths">
-          <h2 className="title">Keep in Touch</h2>
+          <h2 className="title">Join our Mailing List</h2>
           <p className="subtitle">
             Stay up to date with our latest news and upcoming events.
           </p>
