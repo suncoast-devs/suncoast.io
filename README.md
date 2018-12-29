@@ -6,9 +6,9 @@
 
 - [x] Program Application
 - [x] Diversity Scholarship Application
-- [ ] Contact page
+- [x] Contact page
 - [x] Make the email subscribe form live
-- [ ] Add Handbook
+- [x] Add Handbook
 - [ ] Mini-carousel of photos for "Take a Tour"
 
 ### Illustrations

@@ -1,3 +1,6 @@
 [submodule "src/code-of-conduct"]
 	path = src/code-of-conduct
 	url = https://github.com/suncoast-devs/code-of-conduct.git
+[submodule "src/pages/handbook"]
+	path = src/pages/handbook
+	url = https://github.com/suncoast-devs/handbook.git

@@ -37,6 +37,9 @@ module.exports = {
       resolve: `gatsby-mdx`,
       options: {
         extensions: ['.mdx', '.md'],
+        defaultLayouts: {
+          handbook: require.resolve('./src/components/HandbookLayout.js'),
+        },
         gatsbyRemarkPlugins: [
           {
             resolve: 'gatsby-remark-images',
@@ -46,6 +49,13 @@ module.exports = {
             },
           },
         ],
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'handbook',
+        path: `${__dirname}/src/pages/handbook`,
       },
     },
     {
