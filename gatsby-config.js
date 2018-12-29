@@ -42,6 +42,12 @@ module.exports = {
         },
         gatsbyRemarkPlugins: [
           {
+            resolve: 'gatsby-remark-copy-linked-files',
+          },
+          {
+            resolve: 'gatsby-remark-prismjs',
+          },
+          {
             resolve: 'gatsby-remark-images',
             options: {
               maxWidth: 1035,
