@@ -3,11 +3,15 @@ import Container from '../Container'
 import NavItem from '../NavItem'
 
 const CommunityNavigation = () => (
-  <section className="hero is-light">
+  <section className="hero is-light is-small sub-navigation">
     <div className="hero-body">
       <Container>
         <nav className="columns">
-          <NavItem to="/community" icon="fas fa-users fa-lg">
+          <NavItem
+            to="/community"
+            icon="fas fa-users fa-lg"
+            paths={['/community']}
+          >
             Member Organizations
           </NavItem>
           <NavItem to="/community/supporters" icon="fas fa-handshake fa-lg">

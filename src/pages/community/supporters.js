@@ -52,7 +52,7 @@ const CommunitySupporters = ({ data }) => (
         </div>
         <div className="columns is-multiline">
           {data.allContentfulSponsor.edges.map(({ node: sponsor }) => (
-            <div className="column is-one-third">
+            <div className="column is-one-third" key={sponsor.name}>
               <div className="box has-text-centered">
                 <a href={sponsor.url}>
                   <Image
@@ -82,6 +82,7 @@ export const pageQuery = graphql`
     allContentfulSponsor(sort: { fields: createdAt }) {
       edges {
         node {
+          name
           benefit
           url
           logo {

@@ -3,17 +3,30 @@ import Container from '../Container'
 import NavItem from '../NavItem'
 
 const AcademyNavigation = () => (
-  <section className="hero is-light">
+  <section className="hero is-light is-small sub-navigation">
     <div className="hero-body">
       <Container>
         <nav className="columns">
-          <NavItem to="/academy" icon="fas fa-code fa-lg">
+          <NavItem
+            to="/academy"
+            icon="fas fa-code fa-lg"
+            paths={[
+              '/academy',
+              '/academy/catalog',
+              '/academy/schedule/',
+              '/academy/career',
+            ]}
+          >
             Web Development
           </NavItem>
           <NavItem to="/academy/admissions" icon="fas fa-graduation-cap fa-lg">
             Admissions
           </NavItem>
-          <NavItem to="/academy/tuition" icon="fas fa-money-check fa-lg">
+          <NavItem
+            to="/academy/tuition"
+            icon="fas fa-money-check fa-lg"
+            paths={['/academy/tuition', '/academy/tuition/financing']}
+          >
             Tuition
           </NavItem>
           <NavItem

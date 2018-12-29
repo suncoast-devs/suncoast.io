@@ -17,7 +17,7 @@ const ScholarshipsPage = ({ data }) => (
         <TuitionNavigation />
         <h3 className="title is-3">Scholarships</h3>
         {data.allContentfulScholarship.edges.map(({ node: scholarship }) => (
-          <React.Fragment key="f">
+          <React.Fragment key={scholarship.name}>
             <div className="columns is-mobile">
               <div className="column">
                 <h4 className="title is-4">{scholarship.name}</h4>

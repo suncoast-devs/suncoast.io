@@ -1,0 +1,7 @@
+.sub-navigation.hero.is-light {
+  a:not(.button):not(.dropdown-item):not(.tag) {
+    &.is-active {
+      color: $night-sky;
+    }
+  }
+}

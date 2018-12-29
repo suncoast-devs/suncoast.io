@@ -39,7 +39,6 @@ class MainNavigation extends Component {
           'main-navigation',
           'navbar',
           'is-fixed-top',
-          'is-transparent',
           { visible }
         )}
         role="navigation"
