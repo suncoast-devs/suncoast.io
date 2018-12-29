@@ -108,6 +108,16 @@ const HandbookLayout = ({ children }) => (
               </aside>
             </div>
             <div className="column">
+              <article className="message is-primary">
+                <div className="message-body">
+                  <strong>Note</strong>: This document is a{' '}
+                  <em>work in progress</em>. You can help{' '}
+                  <a href="https://github.com/suncoast-devs/handbook">
+                    improve it
+                  </a>
+                  .
+                </div>
+              </article>
               <div className="content">{children}</div>
             </div>
           </div>
