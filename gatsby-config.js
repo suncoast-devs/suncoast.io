@@ -5,6 +5,7 @@ module.exports = {
     title: 'Suncoast Developers Guild',
   },
   plugins: [
+    'gatsby-plugin-catch-links',
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {

@@ -17,7 +17,7 @@ const FinancingPage = ({ data }) => (
         <TuitionNavigation />
         <h3 className="title is-3">Finacing &amp; Payment Options</h3>
         {data.allContentfulFinancingPartner.edges.map(({ node: partner }) => (
-          <React.Fragment key="f">
+          <React.Fragment key={partner.name}>
             <div className="columns">
               <div className="column is-3">
                 <a href={partner.url}>
