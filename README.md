@@ -35,13 +35,15 @@
 - [x] Re-organize styles
 - [ ] Outbound Links for analytics
 - [x] Sitemap
-- [ ] Add SEO header/meta tags
-- [ ] RSS Feed
+- [x] Add SEO header/meta tags
+- [x] RSS Feed
 - [ ] Create PWA
 
 - [ ] Improve Hiring Network responsiveness
 - [ ] Add alumni count to sort Hiring Network
 - [ ] Organize UI components from content components
+- [ ] Add publishDate to success stories & include in RSS feeds
+- [ ] Second SEO pass
 
 ### Deploy
 

@@ -30,6 +30,7 @@ export const pageQuery = graphql`
       story {
         childMarkdownRemark {
           html
+          excerpt(pruneLength: 200)
         }
       }
       student {

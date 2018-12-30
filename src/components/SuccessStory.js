@@ -13,6 +13,7 @@ const SuccessStory = ({ slug, story }) => {
       <SEO
         title={`Success Story: ${story.student.name}`}
         photo={story.student.image.seo.src}
+        description={story.story.childMarkdownRemark.excerpt}
       />
     </>
   )

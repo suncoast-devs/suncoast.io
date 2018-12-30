@@ -6,6 +6,7 @@ import Layout from '../components/Layout'
 import Section from '../components/Section'
 import Container from '../components/Container'
 import PageTitle from '../components/PageTitle'
+import SEO from '../components/SEO'
 import styled from 'styled-components'
 import BackgroundImage from 'gatsby-background-image'
 
@@ -68,7 +69,9 @@ const BlogPost = ({ data }) => {
                     <Icon i="fas fa-tags" s="is-medium has-text-grey" />
                     <div className="tags">
                       {post.tags.map(tag => (
-                        <span className="tag">{tag}</span>
+                        <span key={tag} className="tag">
+                          {tag}
+                        </span>
                       ))}
                     </div>
                   </div>
@@ -89,6 +92,11 @@ const BlogPost = ({ data }) => {
           </div>
         </Container>
       </Section>
+      <SEO
+        title={post.title}
+        description={post.description.childMarkdownRemark.excerpt}
+        photo={post.heroImage.seo.src}
+      />
     </Layout>
   )
 }
@@ -103,6 +111,14 @@ export const pageQuery = graphql`
       heroImage {
         fluid(maxWidth: 1180) {
           ...GatsbyContentfulFluid_withWebp
+        }
+        seo: fixed(width: 1200, height: 630) {
+          src
+        }
+      }
+      description {
+        childMarkdownRemark {
+          excerpt(pruneLength: 200)
         }
       }
       body {

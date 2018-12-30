@@ -1,4 +1,5 @@
 const path = require('path')
+const createFeeds = require('./config/createFeeds')
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
@@ -73,4 +74,8 @@ exports.onCreatePage = ({ page, actions }) => {
       createPage(page)
       break
   }
+}
+
+exports.onPostBuild = ({ graphql }) => {
+  return Promise.all([createFeeds(graphql)])
 }

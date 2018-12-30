@@ -24,6 +24,7 @@ const SEO = ({ title, description, photo, url }) => {
     },
   ]
 
+  const photoURL = photo && photo.replace(/^\/\//, 'https://')
   const photoFields = [
     {
       property: 'og:image:width',
@@ -35,11 +36,11 @@ const SEO = ({ title, description, photo, url }) => {
     },
     {
       property: 'og:image',
-      content: photo,
+      content: photoURL,
     },
     {
       name: 'twitter:image',
-      content: photo,
+      content: photoURL,
     },
   ]
   return (
