@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import { MDXProvider } from '@mdx-js/tag'
 import Footer from './Footer'
+import Head from './Head'
 
 import MainNavigation from './MainNavigation'
 
@@ -45,7 +46,7 @@ const Layout = ({ children }) => (
           ),
         }}
       >
-        <Helmet title={data.site.siteMetadata.title}>
+        <Helmet>
           <html lang="en" className="has-navbar-fixed-top" />
           <link
             rel="stylesheet"
@@ -54,6 +55,7 @@ const Layout = ({ children }) => (
             crossorigin="anonymous"
           />
         </Helmet>
+        <Head />
         <MainNavigation />
         {children}
         <Footer />

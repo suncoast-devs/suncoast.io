@@ -8,6 +8,7 @@ import Section from '../../components/Section'
 import PageTitle from '../../components/PageTitle'
 import AcademyNavigation from '../../components/academy/AcademyNavigation'
 import PersonModal from '../../components/PersonModal'
+import SEO from '../../components/SEO'
 
 const Stories = ({ children, stories }) => (
   <>
@@ -56,11 +57,17 @@ const Stories = ({ children, stories }) => (
 const Story = ({ slug, stories }) => {
   const story = stories.find(s => s.node.slug === slug).node
   return (
-    <PersonModal
-      person={story.student}
-      content={story.story}
-      returnTo="/academy/success"
-    />
+    <>
+      <PersonModal
+        person={story.student}
+        content={story.story}
+        returnTo="/academy/success"
+      />
+      <SEO
+        title={`Success Story: ${story.student.name}`}
+        photo={story.student.image.seo.src}
+      />
+    </>
   )
 }
 
@@ -106,6 +113,9 @@ export const pageQuery = graphql`
             image {
               fixed(width: 128, height: 128) {
                 ...GatsbyContentfulFixed_withWebp
+              }
+              seo: fixed(width: 1200, height: 630) {
+                src
               }
               modal: fluid(maxWidth: 800, maxHeight: 600) {
                 ...GatsbyContentfulFluid_withWebp

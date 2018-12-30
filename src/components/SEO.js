@@ -1,9 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { Location } from '@reach/router'
-import config from '../../gatsby-config'
-
-const { siteUrl } = config.siteMetadata
+import { StaticQuery, graphql } from 'gatsby'
 
 const SEO = ({ title, description, photo, url }) => {
   const titleFields = [
@@ -45,20 +43,38 @@ const SEO = ({ title, description, photo, url }) => {
     },
   ]
   return (
-    <Location>
-      {({ location }) => (
-        <Helmet
-          meta={[
-            {
-              property: 'og:url',
-              content: url ? url : siteUrl + location.pathname,
-            },
-            ...(title && titleFields),
-            ...(description && descriptionFields),
-            ...(photo && photoFields),
-          ]}
-        />
-      )}
-    </Location>
+    <StaticQuery
+      query={graphql`
+        query SEOQuery {
+          site {
+            siteMetadata {
+              siteUrl
+            }
+          }
+        }
+      `}
+      render={data => {
+        const { siteUrl } = data.site.siteMetadata
+        return (
+          <Location>
+            {({ location }) => (
+              <Helmet
+                meta={[
+                  {
+                    property: 'og:url',
+                    content: url ? url : siteUrl + location.pathname,
+                  },
+                  ...(title ? titleFields : []),
+                  ...(description ? descriptionFields : []),
+                  ...(photo ? photoFields : []),
+                ]}
+              />
+            )}
+          </Location>
+        )
+      }}
+    />
   )
 }
+
+export default SEO
