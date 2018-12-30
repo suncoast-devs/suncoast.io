@@ -60,19 +60,32 @@ exports.createPages = ({ graphql, actions }) => {
 }
 
 exports.onCreatePage = ({ page, actions }) => {
-  const { createPage } = actions
-  switch (page.path) {
-    case `/team/volunteers/`:
-      page.matchPath = `/team/volunteers/*`
-      createPage(page)
-      break
-    case `/team/advisory/`:
-      page.matchPath = `/team/advisory/*`
-      createPage(page)
-      break
-    case `/team/`:
-      page.matchPath = `/team/*`
-      createPage(page)
-      break
-  }
+  const { createPage, deletePage } = actions
+  return new Promise((resolve, reject) => {
+    switch (page.path) {
+      case `/team/volunteers/`:
+        page.matchPath = `/team/volunteers/*`
+        createPage(page)
+        break
+      case `/team/advisory/`:
+        page.matchPath = `/team/advisory/*`
+        createPage(page)
+        break
+      case `/team/`:
+        page.matchPath = `/team/*`
+        createPage(page)
+        break
+    }
+
+    // Remove trailing slash
+    const newPage = Object.assign({}, page, {
+      path: page.path === `/` ? page.path : page.path.replace(/\/$/, ``),
+    })
+    if (newPage.path !== page.path) {
+      deletePage(page)
+      createPage(newPage)
+    }
+
+    resolve()
+  })
 }
