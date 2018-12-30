@@ -45,7 +45,6 @@ const Members = ({ members, children }) => (
 
 const Member = ({ slug, members }) => {
   const member = members.find(s => s.node.slug === slug).node
-  console.log(member)
   return (
     <PersonModal
       person={member.person}

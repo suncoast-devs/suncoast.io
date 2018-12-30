@@ -46,3 +46,5 @@
 ### Deploy
 
 - [ ] update `siteUrl` in `gatsby-config.js`
+- [ ] update ENV in production
+- [ ] squash changes into old repo

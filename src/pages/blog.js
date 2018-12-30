@@ -20,7 +20,6 @@ const Media = styled.div`
 
 const BlogIndex = ({ data }) => {
   const posts = data.allContentfulBlogPost.edges
-  console.log(posts)
   return (
     <Layout>
       <Section>
