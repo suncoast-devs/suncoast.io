@@ -5,6 +5,7 @@ exports.createPages = ({ graphql, actions }) => {
 
   return new Promise((resolve, reject) => {
     const blogPost = path.resolve('./src/templates/blog-post.js')
+    const successStory = path.resolve('./src/templates/success-story.js')
     resolve(
       graphql(
         `
@@ -12,7 +13,14 @@ exports.createPages = ({ graphql, actions }) => {
             allContentfulBlogPost {
               edges {
                 node {
-                  title
+                  slug
+                }
+              }
+            }
+
+            allContentfulSuccessStory {
+              edges {
+                node {
                   slug
                 }
               }
@@ -26,12 +34,23 @@ exports.createPages = ({ graphql, actions }) => {
         }
 
         const posts = result.data.allContentfulBlogPost.edges
-        posts.forEach((post, index) => {
+        posts.forEach(post => {
           createPage({
             path: `/blog/${post.node.slug}/`,
             component: blogPost,
             context: {
               slug: post.node.slug,
+            },
+          })
+        })
+
+        const stories = result.data.allContentfulSuccessStory.edges
+        stories.forEach(story => {
+          createPage({
+            path: `/academy/success/${story.node.slug}/`,
+            component: successStory,
+            context: {
+              slug: story.node.slug,
             },
           })
         })
@@ -43,10 +62,6 @@ exports.createPages = ({ graphql, actions }) => {
 exports.onCreatePage = ({ page, actions }) => {
   const { createPage } = actions
   switch (page.path) {
-    case `/academy/success/`:
-      page.matchPath = `/academy/success/*`
-      createPage(page)
-      break
     case `/team/volunteers/`:
       page.matchPath = `/team/volunteers/*`
       createPage(page)
