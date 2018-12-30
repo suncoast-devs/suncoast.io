@@ -39,7 +39,7 @@ const Question = ({
             <ul>
               {answers.map((answer, i) => (
                 <li key={i}>
-                  <label class="checkbox">
+                  <label className="checkbox">
                     <input
                       type="checkbox"
                       name={`q-${step}-${index}`}

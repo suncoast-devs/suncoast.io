@@ -35,12 +35,12 @@ const AcademyCatalog = ({ data }) => (
             />
             <nav className="columns is-mobile">
               <div className="column">
-                <h4 class="title is-4 is-marginless">{faq.question}</h4>
+                <h4 className="title is-4 is-marginless">{faq.question}</h4>
               </div>
               <div className="column is-narrow">
                 <a href="#top">
-                  <span class="icon">
-                    <i class="fas fa-angle-up" />
+                  <span className="icon">
+                    <i className="fas fa-angle-up" />
                   </span>
                 </a>
               </div>

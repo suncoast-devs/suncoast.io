@@ -13,6 +13,8 @@ const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL
 module.exports = {
   siteMetadata: {
     title: 'Suncoast Developers Guild',
+    description:
+      'The only immersive code school in Tampa Bay, Suncoast Developers Guild serves people, not profit. We are changing lives and teaching people to be the best software developers they can be.',
     siteUrl,
   },
   plugins: [
