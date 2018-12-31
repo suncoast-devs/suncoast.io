@@ -26,7 +26,7 @@
 
 - [x] Improve main navigation active states
 - [x] Improve academy/community navigation active states
-- [ ] Now enrolling banner
+- [x] Now enrolling banner
 
 - [ ] Improve responsive tab navigation
 
