@@ -67,14 +67,14 @@ const DailySchedule = () => (
       <p>
         The day for students really gets going at 10 a.m. with two hours of
         class time (lecture, activities, etc.). After lunch is an hour of lab
-        time where students will begin work on the day’s assignment. At 2 p.m.
+        time where students will begin work on the day’s assignment. At 3 p.m.
         class will reconvene for an hour to reinforce the days concepts and
         answer questions that may arise while working on the assignment.
         Following the review, lab hours continue for the rest of the afternoon.
       </p>
 
       <p>
-        Fridays class hour content will be different the rest of the week (e.g.
+        Friday's class hour content will be different the rest of the week (e.g.
         Career Support, guest speakers). Fridays end early with optional
         off-campus social time.
       </p>

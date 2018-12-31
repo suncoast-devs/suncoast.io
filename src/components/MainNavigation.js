@@ -26,7 +26,7 @@ class MainNavigation extends Component {
   _visibilty = () => {
     // Don't hide while menu is visible.
     if (!this.state.active) {
-      const visible = window.scrollY > 100
+      const visible = window.scrollY > 42
       this.setState({ visible })
     }
   }
@@ -35,12 +35,7 @@ class MainNavigation extends Component {
     const { active, visible } = this.state
     return (
       <nav
-        className={cx(
-          'main-navigation',
-          'navbar',
-          'is-fixed-top',
-          { visible }
-        )}
+        className={cx('main-navigation', 'navbar', 'is-fixed-top', { visible })}
         role="navigation"
         aria-label="main navigation"
       >
