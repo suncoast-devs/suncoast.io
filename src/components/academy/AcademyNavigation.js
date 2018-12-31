@@ -9,7 +9,7 @@ const AcademyNavigation = () => (
     <section className="hero is-light is-small sub-navigation">
       <div className="hero-body">
         <Container>
-          <nav className="columns">
+          <nav className="columns is-hidden-mobile">
             <NavItem
               to="/academy"
               icon="fas fa-code fa-lg"
