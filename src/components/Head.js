@@ -67,6 +67,11 @@ const Head = () => (
               href: `${siteUrl}/atom.xml`,
               type: 'application/atom+xml',
             },
+            {
+              rel: 'stylesheet',
+              href: 'https://use.typekit.net/rmp3tzf.css',
+              type: 'text/css',
+            }
           ]}
         />
       )
