@@ -37,7 +37,7 @@
 - [x] Sitemap
 - [x] Add SEO header/meta tags
 - [x] RSS Feed
-- [ ] Create PWA
+- [x] Create PWA
 
 - [ ] Improve Hiring Network responsiveness
 - [ ] Add alumni count to sort Hiring Network
@@ -50,3 +50,4 @@
 - [ ] update `siteUrl` in `gatsby-config.js`
 - [ ] update ENV in production
 - [ ] squash changes into old repo
+- [ ] update renovate bot
