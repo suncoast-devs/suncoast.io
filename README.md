@@ -9,6 +9,8 @@
 - [x] Contact page
 - [x] Make the email subscribe form live
 - [x] Add Handbook
+- [ ] Add calls to action to homepage
+- [ ] Add store and kids classes to homepage
 
 - [ ] Mini-carousel of photos for "Take a Tour"
 
