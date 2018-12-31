@@ -1,10 +1,11 @@
+import { MDXProvider } from '@mdx-js/tag'
 import Layout from '../components/Layout'
 import Container from '../components/Container'
 import Section from '../components/Section'
 import PageTitle from '../components/PageTitle'
+import UniversalLink from '../components/UniversalLink'
 import Icon from '../components/Icon'
 import CodeOfConduct from '../code-of-conduct/code-of-conduct.md'
-import { MDXProvider } from '@mdx-js/tag'
 
 export default ({ children }) => (
   <Layout>
@@ -13,6 +14,7 @@ export default ({ children }) => (
         <PageTitle hidden>Code of Conduct</PageTitle>
         <MDXProvider
           components={{
+            a: UniversalLink,
             h1: ({ children, ...rest }) => (
               <h2 className="title is-2" {...rest}>
                 {children}

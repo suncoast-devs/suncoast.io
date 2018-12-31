@@ -1,11 +1,10 @@
 import React from 'react'
-import Link from 'gatsby-link'
-import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import { MDXProvider } from '@mdx-js/tag'
 import Layout from './Layout'
 import Container from './Container'
 import Section from './Section'
 import PageTitle from './PageTitle'
+import Link from './UniversalLink'
 
 const HandbookLayout = ({ children }) => (
   <Layout>
@@ -13,6 +12,7 @@ const HandbookLayout = ({ children }) => (
       <Container>
         <MDXProvider
           components={{
+            a: Link,
             h1: ({ children, ...rest }) => <PageTitle>{children}</PageTitle>,
             h2: ({ children, ...rest }) => (
               <h3 className="title is-3" {...rest}>
@@ -113,9 +113,9 @@ const HandbookLayout = ({ children }) => (
                 <div className="message-body">
                   <strong>Note</strong>: This document is a{' '}
                   <em>work in progress</em>. You can help{' '}
-                  <OutboundLink href="https://github.com/suncoast-devs/handbook">
+                  <Link href="https://github.com/suncoast-devs/handbook">
                     improve it
-                  </OutboundLink>
+                  </Link>
                   .
                 </div>
               </article>

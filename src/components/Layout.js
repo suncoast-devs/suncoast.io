@@ -5,7 +5,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import { MDXProvider } from '@mdx-js/tag'
 import Footer from './Footer'
 import Head from './Head'
-
+import UniversalLink from './UniversalLink'
 import MainNavigation from './MainNavigation'
 
 import '../styles/screen.scss'
@@ -24,6 +24,7 @@ const Layout = ({ children }) => (
     render={data => (
       <MDXProvider
         components={{
+          a: UniversalLink,
           h1: ({ children, ...rest }) => (
             <h1 className="title is-1" {...rest}>
               {children}
