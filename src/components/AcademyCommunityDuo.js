@@ -1,6 +1,5 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import temp from '../images/temp.svg'
 
 const AcademyCommunityDuo = () => (
   <section className="academy-community-duo section">

@@ -17,53 +17,6 @@ const IndexPage = () => (
     <SplashHero />
     <AcademyCommunityDuo />
     <MissionStatement />
-    <section className="section">
-      <div className="container">
-        <hr />
-        <div className="columns">
-          <div className="column">
-            <div className="columns is-vcentered is-mobile">
-              <div className="column is-narrow">
-                <figure className="image is-96x96">
-                  <img src={junior} alt="SDG Jr." />
-                </figure>
-              </div>
-              <div className="column content">
-                <p>Do you want to know about our free kids classes?</p>
-                <p>
-                  <Link to="/jr" className="button is-primary">
-                    Yes, I do!
-                  </Link>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="column">
-            <div className="columns is-vcentered is-mobile">
-              <div className="column is-narrow">
-                <figure className="image is-128x128">
-                  <img src={swag} alt="Sweet Swag" />
-                </figure>
-              </div>
-              <div className="column content">
-                <p>
-                  Get shirts, stickers and other stunning swag from our store.
-                </p>
-                <p>
-                  <Link
-                    href="http://store.suncoast.io/"
-                    className="button is-primary"
-                  >
-                    Shop Now
-                  </Link>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr />
-      </div>
-    </section>
     <section className="section getting-involved">
       <div className="container">
         <div className="columns">
@@ -123,6 +76,53 @@ const IndexPage = () => (
             </p>
           </div>
         </div>
+      </div>
+    </section>
+    <section className="section kids-swag">
+      <div className="container">
+        <hr />
+        <div className="columns">
+          <div className="column">
+            <div className="columns is-vcentered is-mobile">
+              <div className="column is-narrow">
+                <figure className="image is-96x96">
+                  <img src={junior} alt="SDG Jr." />
+                </figure>
+              </div>
+              <div className="column content">
+                <p>Do you want to know about our free kids classes?</p>
+                <p>
+                  <Link to="/jr" className="button is-primary">
+                    Yes, I do!
+                  </Link>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="column">
+            <div className="columns is-vcentered is-mobile">
+              <div className="column is-narrow">
+                <figure className="image is-128x128">
+                  <img src={swag} alt="Sweet Swag" />
+                </figure>
+              </div>
+              <div className="column content">
+                <p>
+                  Get shirts, stickers and other stunning swag from our store.
+                </p>
+                <p>
+                  <Link
+                    href="http://store.suncoast.io/"
+                    className="button is-primary"
+                  >
+                    Shop Now
+                  </Link>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
       </div>
     </section>
     <MailingListForm />

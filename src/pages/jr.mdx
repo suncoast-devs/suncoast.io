@@ -1,0 +1,136 @@
+import { graphql } from 'gatsby'
+import Image from 'gatsby-image'
+import ContentLayout from '../components/ContentLayout'
+
+export default ({ data, children }) => (
+  <ContentLayout title="Suncoast Developers Guild Jr.">
+    <p>
+      Suncoast Developers Guild Jr is a volunteer-run program that provides free
+      kids classes that gives an introduction to coding to children and young
+      adults. Our goal is for students to have a great time learning and playing
+      with new tools and ideas. There are no tests, grades or homework.
+    </p>
+    <div className="columns">
+      <div className="column">
+        <p>
+          <Image
+            Tag="figure"
+            className="image"
+            fluid={data.one.childImageSharp.fluid}
+            alt="Picture of the students from our October 2018 scratch class."
+          />
+        </p>
+      </div>
+      <div className="column">
+        <Image
+          Tag="figure"
+          className="image"
+          fluid={data.two.childImageSharp.fluid}
+          alt="Picture of the students from our October 2018 scratch class."
+        />
+      </div>
+      <div className="column">
+        <Image
+          Tag="figure"
+          className="image"
+          fluid={data.three.childImageSharp.fluid}
+          alt="Picture of the students from our October 2018 scratch class."
+        />
+      </div>
+    </div>
+    {children}
+    <hr />
+    <div className="columns is-centered">
+      <div className="column is-two-thirds">
+        <Image
+          Tag="figure"
+          className="image"
+          fluid={data.grads.childImageSharp.fluid}
+        />
+      </div>
+    </div>
+  </ContentLayout>
+)
+
+export const query = graphql`
+  query {
+    one: file(relativePath: { eq: "jr/one.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 720) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    two: file(relativePath: { eq: "jr/two.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 720) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    three: file(relativePath: { eq: "jr/three.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 720) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    grads: file(relativePath: { eq: "jr/grads.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 720) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
+
+### Why do we host free kids classes?
+
+We believe in investing in the local tech economy for the long-run, and that means impacting the next generation. Plus it is just super fun!!
+
+### How often do we host kids classes?
+
+We host classes at our campus three to four times a year. We will also hold classes at other locations for special events such as Hour of Code and Tampa Bay Startup Week.
+
+### What ages can attend?
+
+Our classes are designed for two age groups, 8-12 and 13-17. We strive to make learning fun and teach our students new skills, and these age groups allow us to adjust the curriculum so that each attendee can complete a small project by the end of the class.
+
+### What type of classes do you carry?
+
+We are continously looking for new classes to rotate into our program. Here are a few that we have carried in the past:
+
+#### Scratch
+
+[Scratch](https://scratch.mit.edu/) is a visual program language provided by Lifelong Kindergarten Group at the MIT Media Lab. We like to use Scratch to break down many barriers that prevent students from learning to code, while still teaching the basics and logic behind programming.
+
+Scratch is a drag and drop method for learning to code so it feels more like a game to students and allows them to add characters, animations, and even sounds to their projects without needing typing skills.
+
+#### HTML & CSS
+
+HTML and CSS are the building blocks of web development--every website has HTML and CSS in it! In this class, we teach the basics of web programming and CSS animations, allowing the students plenty of time to experiment and personalize their pages.
+
+#### Javascript
+
+Javascript is a powerful programming language that is used in every web browser. We utilize fun activities and animations to teach kids about functions, strings, arrays and more. We offer both introductory and intermediate javascript classes. Come prepared to look for every last quote, period and semi-colon!
+
+### What do we need to bring if we attend?
+
+Students are required to bring their own computer. If you do not have a laptop and would like to attend please [contact us](/contact).
+
+Both Mac and PCs are welcome, we do recommend that is is fully charged or that you bring a charger with you. All software used is free online! We also recommend having access to a web browser such as Chrome or Firefox prior to class. If you need to download something for a class we will let you know before you arrive.
+
+### Do we need to have prior experience before attending?
+
+Imagination and a love for fun are the only requirements for our classes. Basic typing skills are helpful, but we will go at a slow enough pace for students that are not as familiar with typing.
+
+Our introductory classes are for beginners with no prerequisites. We do recommend attending an intro class before any of our intermediate classes for the 13-17 age group.
+
+### Do I need to be present while my child is in the class?
+
+We do require a parent or a guardian to remain with the student for the entirety of the course for students under the age of 16. Parents can learn something new and have a great time with their child as they learn to code.
+
+### How do we sign up to learn about upcoming classes?
+
+You can find our next class on [our Meetup](https://www.meetup.com/suncoast-developers-guild/). In the mean time, you can [join our mailing list](https://goo.gl/forms/h3RNx591XCPO4ZMy1).

@@ -4,7 +4,7 @@ import Container from '../components/Container'
 import PageTitle from '../components/PageTitle'
 import Section from '../components/Section'
 import MailingListForm from '../components/MailingListForm'
-import temp from '../images/temp.svg'
+// import temp from '../images/temp.svg'
 
 const ThanksPage = () => (
   <Layout>
@@ -12,9 +12,9 @@ const ThanksPage = () => (
       <Container>
         <div className="has-text-centered">
           <PageTitle>Thank You!</PageTitle>
-          <figure>
+          {/* <figure>
             <img src={temp} alt="Placeholder Illustration" width="200" />
-          </figure>
+          </figure> */}
 
           <h3 className="subtitle">We will be in touch soon&hellip;</h3>
         </div>

@@ -1,0 +1,10 @@
+.splash {
+  background-image: linear-gradient(
+      transparentize($night-sky, 0.25),
+      transparentize($bright-sky, 0.25)
+    ),
+    url('../images/splash.svg');
+  background-size: cover;
+  background-repeat: none;
+  background-position: center 40%;
+}

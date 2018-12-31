@@ -4,7 +4,7 @@ import Link from 'gatsby-link'
 import Image from 'gatsby-image'
 import cx from 'classnames'
 import Carousel from 're-carousel'
-import temp from '../images/temp.svg'
+// import temp from '../images/temp.svg'
 
 const INITIAL_STATE = {
   givenName: '',
@@ -200,13 +200,13 @@ class MailingListForm extends React.Component {
                     <h4 className="subtitle">
                       Check your email to confirm your subscription.
                     </h4>
-                    <figure>
+                    {/* <figure>
                       <img
                         src={temp}
                         alt="Placeholder Illustration"
                         width="200"
                       />
-                    </figure>
+                    </figure> */}
                   </div>
                 </div>
                 <button
