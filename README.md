@@ -9,18 +9,16 @@
 - [x] Contact page
 - [x] Make the email subscribe form live
 - [x] Add Handbook
-- [ ] Add calls to action to homepage
-- [ ] Add store and kids classes to homepage
-
+- [x] Add calls to action to homepage
+- [x] Add store and kids classes to homepage
 - [x] Mini-carousel of photos for "Take a Tour"
 
 ### Illustrations
 
-- [ ] Curriculum infographic
+- [x] Curriculum infographic
 - [ ] Academy illustration
 - [ ] Community illustration
 - [ ] Mission/Org illustration
-
 - [ ] Thanks illustration (also shown on mailing list modal)
 - [ ] 404 illustration
 
@@ -29,7 +27,6 @@
 - [x] Improve main navigation active states
 - [x] Improve academy/community navigation active states
 - [x] Now enrolling banner
-
 - [ ] Improve responsive tab navigation
 
 ### Technical Debt
@@ -40,7 +37,6 @@
 - [x] Add SEO header/meta tags
 - [x] RSS Feed
 - [x] Create PWA
-
 - [ ] Improve Hiring Network responsiveness
 - [ ] Add alumni count to sort Hiring Network
 - [ ] Organize UI components from content components

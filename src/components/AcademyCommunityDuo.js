@@ -12,11 +12,11 @@ const AcademyCommunityDuo = () => (
           </h2>
           <p className="subtitle">Learn to code with us.</p>
           <div className="content">
-            <figure>
+            {/* <figure>
               <Link to="/academy">
                 <img src={temp} alt="Placeholder Illustration" width="320" />
               </Link>
-            </figure>
+            </figure> */}
             <p className="has-text-left">
               The <strong>Academy at Suncoast Developers Guild</strong> is a
               code school that serves people, not profit. We are changing lives
@@ -39,11 +39,11 @@ const AcademyCommunityDuo = () => (
             designers in Tampa Bay.
           </p>
           <div className="content">
-            <figure>
+            {/* <figure>
               <Link to="/community">
                 <img src={temp} alt="Placeholder Illustration" width="320" />
               </Link>
-            </figure>
+            </figure> */}
             <p className="has-text-left">
               With thousands of members across dozens of local groups, our
               members touch all aspects of technology development in Tampa Bay.
