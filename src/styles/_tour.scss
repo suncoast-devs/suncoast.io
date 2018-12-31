@@ -1,0 +1,14 @@
+.tour-carousel {
+  overflow: hidden;
+  height: 0;
+  padding-top: 50%;
+  position: relative;
+
+  .tour-carousel-body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}

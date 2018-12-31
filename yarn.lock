@@ -5589,7 +5589,7 @@ gatsby-plugin-manifest@2.0.13:
     bluebird "^3.5.0"
     sharp "^0.21.0"
 
-gatsby-plugin-offline@^2.0.20:
+gatsby-plugin-offline@2.0.20:
   version "2.0.20"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-2.0.20.tgz#bd1bedb73e85ea49beed8834d3964b294080a3a9"
   integrity sha512-6kVHEHAQJdwjgzX1NvIRNRFlffMWioM4IzclT+3n/NtL4cO1Zb8wuKk6WGjnLPN2GkxM2d/1i2kvsQuQKSgPHQ==
@@ -10471,6 +10471,13 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.2.7:
     ini "~1.3.0"
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
+
+re-carousel@^2.3.1:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/re-carousel/-/re-carousel-2.3.1.tgz#23c5fb5b5fa1795d245f4f5b6860a90887910490"
+  integrity sha512-JwiTN7AMvM8GBWwVwYO83oQ+Y7gi1ZWaJvYB2/kpOL8IbMvnmCplSZfly7IcOHvQAc1zi6fwFwRbv+69CJKqBg==
+  dependencies:
+    prop-types "^15.6.2"
 
 react-dev-utils@^4.2.1:
   version "4.2.3"
