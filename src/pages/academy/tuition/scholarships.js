@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Image from 'gatsby-image'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import Layout from '../../../components/Layout'
 import Container from '../../../components/Container'
 import Section from '../../../components/Section'
@@ -29,19 +30,22 @@ const ScholarshipsPage = ({ data }) => (
                 />
               </div>
               <div className="column is-narrow">
-                <a href={scholarship.url}>
+                <OutboundLink href={scholarship.url}>
                   <Image
                     Tag="figure"
                     className="image"
                     fluid={scholarship.logo.fluid}
                     alt={scholarship.logo.description}
                   />
-                </a>
+                </OutboundLink>
                 <br />
                 <p className="has-text-centered">
-                  <a href={scholarship.url} className="button is-link">
+                  <OutboundLink
+                    href={scholarship.url}
+                    className="button is-link"
+                  >
                     {scholarship.callToAction}
-                  </a>
+                  </OutboundLink>
                 </p>
               </div>
             </div>

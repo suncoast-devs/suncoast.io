@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/Layout'
-
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import { withPrefix } from 'gatsby'
 
 const BrandPage = () => (
@@ -388,13 +388,18 @@ const BrandPage = () => (
             <p>
               The official style manual for all Suncoast Developers Guild
               communications is{' '}
-              <a href="https://www.apstylebook.com/">
+              <OutboundLink href="https://www.apstylebook.com/">
                 The Associated Press Stylebook
-              </a>
+              </OutboundLink>
               . Use tools like spell checking,{' '}
-              <a href="https://www.grammarly.com/">Grammarly</a>, and{' '}
-              <a href="http://www.hemingwayapp.com/">Hemingway Editor</a> to
-              ensure writing is clear, concise, and correct.
+              <OutboundLink href="https://www.grammarly.com/">
+                Grammarly
+              </OutboundLink>
+              , and{' '}
+              <OutboundLink href="http://www.hemingwayapp.com/">
+                Hemingway Editor
+              </OutboundLink>{' '}
+              to ensure writing is clear, concise, and correct.
             </p>
             <p>Look for opportunities to convey inclusiveness and empathy.</p>
           </div>

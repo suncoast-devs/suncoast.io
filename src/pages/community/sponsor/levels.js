@@ -1,4 +1,5 @@
 import React from 'react'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import ContentLayout from '../../../components/ContentLayout'
 import CommunityNavigation from '../../../components/community/CommunityNavigation'
 import SponsorshipNavigation from '../../../components/community/SponsorshipNavigation'
@@ -74,9 +75,12 @@ export default () => (
     <hr />
 
     <p className="has-text-centered">
-      <a className="button is-primary" href="http://bit.ly/SDG-supporter-form">
+      <OutboundLink
+        className="button is-primary"
+        href="http://bit.ly/SDG-supporter-form"
+      >
         Support SDG
-      </a>
+      </OutboundLink>
     </p>
   </ContentLayout>
 )

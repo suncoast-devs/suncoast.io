@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Image from 'gatsby-image'
 import Link from 'gatsby-link'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import CommunityNavigation from '../../components/community/CommunityNavigation'
 import Layout from '../../components/Layout'
 import Container from '../../components/Container'
@@ -28,19 +29,19 @@ const CommunityIndex = ({ data }) => (
               <div className="box">
                 <div className="columns has-text-centered is-vcentered">
                   <div className="column is-narrow">
-                    <a href={org.url}>
+                    <OutboundLink href={org.url}>
                       <Image
                         Tag="figure"
                         className="image"
                         fixed={org.logo.fixed}
                         alt={org.logo.description}
                       />
-                    </a>
+                    </OutboundLink>
                   </div>
                   <div className="column">
-                    <a href={org.url}>
+                    <OutboundLink href={org.url}>
                       <h4 className="title is-4">{org.name}</h4>
-                    </a>
+                    </OutboundLink>
                   </div>
                 </div>
               </div>

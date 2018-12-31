@@ -33,7 +33,7 @@
 ### Technical Debt
 
 - [x] Re-organize styles
-- [ ] Outbound Links for analytics
+- [x] Outbound Links for analytics
 - [x] Sitemap
 - [x] Add SEO header/meta tags
 - [x] RSS Feed

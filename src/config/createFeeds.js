@@ -65,7 +65,7 @@ module.exports = graphql => {
         result.data.allContentfulBlogPost.edges.forEach(({ node: post }) => {
           feed.addItem({
             id: post.slug,
-            link: `${config.siteMetadata.siteUrl}/blog${post.slug}`,
+            link: `${config.siteMetadata.siteUrl}/blog/${post.slug}`,
             title: post.title,
             description: post.description.childMarkdownRemark.html,
             date: new Date(post.publishDate),

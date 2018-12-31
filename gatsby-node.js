@@ -1,5 +1,5 @@
 const path = require('path')
-const createFeeds = require('./config/createFeeds')
+const createFeeds = require('./src/config/createFeeds')
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
@@ -57,6 +57,7 @@ exports.createPages = ({ graphql, actions }) => {
   })
 }
 
+// TODO: Move these to static pages, like success stories above.
 exports.onCreatePage = ({ page, actions }) => {
   const { createPage } = actions
 

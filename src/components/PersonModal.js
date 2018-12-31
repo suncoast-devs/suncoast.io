@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'gatsby-image'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import Link from 'gatsby-link'
 import Icon from './Icon'
 
@@ -32,28 +33,30 @@ const PersonModal = ({ person, content, returnTo }) => (
             <div className="level-right">
               {person.github && (
                 <p className="level-item">
-                  <a href={`https://github.com/${person.github}`}>
+                  <OutboundLink href={`https://github.com/${person.github}`}>
                     <Icon i="fab fa-github fa-lg" />
-                  </a>
+                  </OutboundLink>
                 </p>
               )}
               {person.linkedIn && (
                 <p className="level-item">
-                  <a href={`https://www.linkedin.com/in/${person.linkedIn}/`}>
+                  <OutboundLink
+                    href={`https://www.linkedin.com/in/${person.linkedIn}/`}
+                  >
                     <Icon i="fab fa-linkedin fa-lg" />
-                  </a>
+                  </OutboundLink>
                 </p>
               )}
               {person.twitter && (
                 <p className="level-item">
-                  <a href={`https://twitter.com/${person.twitter}`}>
+                  <OutboundLink href={`https://twitter.com/${person.twitter}`}>
                     <Icon i="fab fa-twitter fa-lg" />
-                  </a>
+                  </OutboundLink>
                 </p>
               )}
               {person.blogUrl && (
                 <p className="level-item">
-                  <a href={person.blogUrl}>
+                  <OutboundLink href={person.blogUrl}>
                     <Icon
                       i={
                         person.blogUrl.includes('medium.com')
@@ -61,7 +64,7 @@ const PersonModal = ({ person, content, returnTo }) => (
                           : 'fas fa-blog fa-lg'
                       }
                     />
-                  </a>
+                  </OutboundLink>
                 </p>
               )}
             </div>

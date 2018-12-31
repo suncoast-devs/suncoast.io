@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Image from 'gatsby-image'
 import Link from 'gatsby-link'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import CommunityNavigation from '../../components/community/CommunityNavigation'
 import Layout from '../../components/Layout'
 import Container from '../../components/Container'
@@ -54,18 +55,18 @@ const CommunitySupporters = ({ data }) => (
           {data.allContentfulSponsor.edges.map(({ node: sponsor }) => (
             <div className="column is-one-third" key={sponsor.name}>
               <div className="box has-text-centered">
-                <a href={sponsor.url}>
+                <OutboundLink href={sponsor.url}>
                   <Image
                     Tag="figure"
                     className="image"
                     fluid={sponsor.logo.fluid}
                     alt={sponsor.logo.description}
                   />
-                </a>
+                </OutboundLink>
                 <hr />
-                <a href={sponsor.url}>
+                <OutboundLink href={sponsor.url}>
                   <h4 className="title is-4">{sponsor.benefit}</h4>
-                </a>
+                </OutboundLink>
               </div>
             </div>
           ))}

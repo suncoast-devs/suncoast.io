@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Image from 'gatsby-image'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import Layout from '../../../components/Layout'
 import Container from '../../../components/Container'
 import Section from '../../../components/Section'
@@ -20,19 +21,19 @@ const FinancingPage = ({ data }) => (
           <React.Fragment key={partner.name}>
             <div className="columns">
               <div className="column is-3">
-                <a href={partner.url}>
+                <OutboundLink href={partner.url}>
                   <Image
                     tag="figure"
                     className="image"
                     fluid={partner.logo.fluid}
                     alt={partner.logo.description}
                   />
-                </a>
+                </OutboundLink>
                 <br />
                 <p className="has-text-centered">
-                  <a href={partner.url} className="button is-link">
+                  <OutboundLink href={partner.url} className="button is-link">
                     {partner.callToAction}
-                  </a>
+                  </OutboundLink>
                 </p>
               </div>
               <div

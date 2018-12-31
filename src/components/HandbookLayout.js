@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import { MDXProvider } from '@mdx-js/tag'
 import Layout from './Layout'
 import Container from './Container'
@@ -112,9 +113,9 @@ const HandbookLayout = ({ children }) => (
                 <div className="message-body">
                   <strong>Note</strong>: This document is a{' '}
                   <em>work in progress</em>. You can help{' '}
-                  <a href="https://github.com/suncoast-devs/handbook">
+                  <OutboundLink href="https://github.com/suncoast-devs/handbook">
                     improve it
-                  </a>
+                  </OutboundLink>
                   .
                 </div>
               </article>

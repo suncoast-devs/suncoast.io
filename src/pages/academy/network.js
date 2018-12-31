@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Image from 'gatsby-image'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import Layout from '../../components/Layout'
 import Container from '../../components/Container'
 import PageTitle from '../../components/PageTitle'
@@ -19,13 +20,13 @@ const AcademyNetwork = ({ data }) => (
         <div className="columns is-multiline is-variable is-6">
           {data.allContentfulHiringPartner.edges.map(({ node: partner }) => (
             <div className="column is-one-quarter">
-              <a href={partner.url}>
+              <OutboundLink href={partner.url}>
                 <Image
                   className="image"
                   fluid={partner.logo.fluid}
                   alt={partner.logo.description}
                 />
-              </a>
+              </OutboundLink>
             </div>
           ))}
         </div>
