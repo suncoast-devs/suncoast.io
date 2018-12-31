@@ -7,6 +7,7 @@ import MailingListForm from '../../components/MailingListForm'
 import AcademyNavigation from '../../components/academy/AcademyNavigation'
 import ProgramNavigation from '../../components/academy/ProgramNavigation'
 import OurCurriculum from '../../components/academy/OurCurriculum'
+import ProgramSchedule from '../../components/academy/ProgramSchedule'
 
 const AcademyIndex = () => (
   <Layout>
@@ -16,6 +17,7 @@ const AcademyIndex = () => (
         <PageTitle seo="Our Curriculum">Web Development Program</PageTitle>
         <ProgramNavigation />
         <OurCurriculum />
+        <ProgramSchedule />
       </Container>
     </Section>
     <MailingListForm />

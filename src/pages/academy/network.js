@@ -19,7 +19,7 @@ const AcademyNetwork = ({ data }) => (
         </h3>
         <div className="columns is-multiline is-variable is-6">
           {data.allContentfulHiringPartner.edges.map(({ node: partner }) => (
-            <div className="column is-one-quarter">
+            <div className="column is-one-quarter" key={partner.id}>
               <OutboundLink href={partner.url}>
                 <Image
                   className="image"
@@ -53,6 +53,7 @@ export const pageQuery = graphql`
     allContentfulHiringPartner {
       edges {
         node {
+          id
           name
           url
           logo {

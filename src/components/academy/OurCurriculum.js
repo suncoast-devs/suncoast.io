@@ -1,27 +1,9 @@
 import React from 'react'
-import temp from '../../images/temp.svg'
+import curriculum from '../../images/curriculum.svg'
 
 const OurCurriculum = () => (
   <>
     <h3 className="title is-3">Our Curriculum</h3>
-
-    <div className="columns">
-      <div className="column has-text-centered">
-        <figure>
-          <img src={temp} alt="Placeholder Illustration" width="200" />
-        </figure>
-      </div>
-      <div className="column has-text-centered">
-        <figure>
-          <img src={temp} alt="Placeholder Illustration" width="200" />
-        </figure>
-      </div>
-      <div className="column has-text-centered">
-        <figure>
-          <img src={temp} alt="Placeholder Illustration" width="200" />
-        </figure>
-      </div>
-    </div>
 
     <div className="content">
       <p>
@@ -39,6 +21,10 @@ const OurCurriculum = () => (
         beautiful, fully functional websites backed by databases and server-side
         applications.
       </p>
+
+      <figure>
+        <img src={curriculum} alt="Curriculum Infographic" />
+      </figure>
     </div>
   </>
 )

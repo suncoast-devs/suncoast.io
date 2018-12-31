@@ -5,8 +5,6 @@ import SplashHero from '../components/SplashHero'
 import AcademyCommunityDuo from '../components/AcademyCommunityDuo'
 import MissionStatement from '../components/MissionStatement'
 import MailingListForm from '../components/MailingListForm'
-// import UpcomingEvents from '../components/UpcomingEvents'
-// import SocialHighlights from '../components/SocialHighlights'
 
 const IndexPage = () => (
   <Layout>
@@ -16,8 +14,6 @@ const IndexPage = () => (
     <SplashHero />
     <AcademyCommunityDuo />
     <MissionStatement />
-    {/* <UpcomingEvents /> */}
-    {/* <SocialHighlights /> */}
     <MailingListForm />
   </Layout>
 )

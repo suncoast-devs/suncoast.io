@@ -18,7 +18,6 @@ module.exports = {
     siteUrl,
   },
   plugins: [
-    // 'gatsby-plugin-catch-links',
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {

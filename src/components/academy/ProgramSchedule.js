@@ -1,9 +1,10 @@
 import React from 'react'
+import Link from 'gatsby-link'
 
 const ProgramSchedule = () => (
   <>
     <h3 className="title is-3">Program Schedule</h3>
-    <table className="table is-fullwidth">
+    <table className="table is-fullwidth program-schedule">
       <thead>
         <tr>
           <th>Cohort</th>
