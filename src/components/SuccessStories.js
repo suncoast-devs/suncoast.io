@@ -7,7 +7,7 @@ const SuccessStories = ({ children, stories }) => (
     {stories.map(({ node: story }) => (
       <React.Fragment key={story.slug}>
         <div className="columns">
-          <div className="column is-narrow">
+          <div className="column is-narrow has-text-centered">
             <Link to={`/academy/success/${story.slug}`}>
               <Image
                 className="image"
@@ -30,7 +30,10 @@ const SuccessStories = ({ children, stories }) => (
               }}
             />
           </div>
-          <div className="column is-narrow" style={{ alignSelf: 'flex-end' }}>
+          <div
+            className="column is-narrow has-text-centered"
+            style={{ alignSelf: 'flex-end' }}
+          >
             <Link to={`/academy/success/${story.slug}`}>
               <span className="icon is-medium">
                 <span className="fa-stack">

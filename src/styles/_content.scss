@@ -1,0 +1,27 @@
+.content {
+  blockquote {
+    position: relative;
+
+    &::before,
+    &::after {
+      font-family: $family-secondary;
+      font-weight: 700;
+      position: absolute;
+      font-size: 6rem;
+      line-height: 0;
+      color: transparentize($bright-sky, 0.8);
+    }
+
+    &::before {
+      left: 0;
+      top: 2rem;
+      content: '\201C';
+    }
+
+    &::after {
+      right: 0;
+      bottom: -1rem;
+      content: '\201D';
+    }
+  }
+}

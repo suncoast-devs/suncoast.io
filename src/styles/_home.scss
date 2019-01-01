@@ -15,9 +15,30 @@
       background-color: $white-ter;
     }
   }
+
+  .title a {
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .academy .title a {
+    background-image: linear-gradient(42deg, $sea, $lime);
+  }
+
+  .community .title a {
+    background-image: linear-gradient(42deg, $sun, $tangerine);
+  }
 }
 
 .mission-statement {
+  .title {
+    background-image: linear-gradient(8deg, $night-sky, $bright-sky);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
   .column.mission {
     display: flex;
     flex-direction: column;

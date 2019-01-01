@@ -23,7 +23,7 @@ export default AcademySucesss
 
 export const pageQuery = graphql`
   query {
-    allContentfulSuccessStory {
+    allContentfulSuccessStory(sort: { fields: publishDate, order: DESC }) {
       edges {
         node {
           slug
