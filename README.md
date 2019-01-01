@@ -12,6 +12,7 @@
 - [x] Add calls to action to homepage
 - [x] Add store and kids classes to homepage
 - [x] Mini-carousel of photos for "Take a Tour"
+- [ ] Port Demo Day sites (include each cohort).
 
 ### Illustrations
 
@@ -28,6 +29,7 @@
 - [x] Improve academy/community navigation active states
 - [x] Now enrolling banner
 - [ ] Improve responsive tab navigation
+- [ ] Improve Hiring Network responsiveness
 
 ### Technical Debt
 
@@ -37,7 +39,6 @@
 - [x] Add SEO header/meta tags
 - [x] RSS Feed
 - [x] Create PWA
-- [ ] Improve Hiring Network responsiveness
 - [ ] Add alumni count to sort Hiring Network
 - [ ] Organize UI components from content components
 - [ ] Add publishDate to success stories & include in RSS feeds
