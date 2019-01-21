@@ -10472,7 +10472,7 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-re-carousel@^2.3.1:
+re-carousel@2.3.1:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/re-carousel/-/re-carousel-2.3.1.tgz#23c5fb5b5fa1795d245f4f5b6860a90887910490"
   integrity sha512-JwiTN7AMvM8GBWwVwYO83oQ+Y7gi1ZWaJvYB2/kpOL8IbMvnmCplSZfly7IcOHvQAc1zi6fwFwRbv+69CJKqBg==
